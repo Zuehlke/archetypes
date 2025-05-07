@@ -20,3 +20,9 @@ But the key idea remains: a flexible, transparent framework that supports indivi
 ## Who are we?
 
 This initiative is driven by the [Zühlke Software Excellence practice](https://www.zuehlke.com/en/expertise/software-engineering).
+
+## License
+
+This work is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). 
+
+![CC](https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc-sa.png)
