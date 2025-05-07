@@ -18,7 +18,7 @@
     
     
       
-        <title>Pair Programming - Zühlke Archetypes</title>
+        <title>The Test Pyramid - Zühlke Archetypes</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pair-programming" class="md-skip">
+        <a href="#the-test-pyramid" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Pair Programming
+              The Test Pyramid
             
           </span>
         </div>
@@ -367,17 +367,58 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    The Test Pyramid
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Pair Programming
+    The Test Pyramid
     
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#learning-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Resources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -411,6 +452,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#learning-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Resources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -425,7 +483,20 @@
 
 
 
-<h1 id="pair-programming">Pair Programming</h1>
+<h1 id="the-test-pyramid">The Test Pyramid</h1>
+<p>A well-balanced automated testing strategy is often visualised as a pyramid.
+At the base are unit tests—small, fast, and reliable tests that verify individual components in isolation.
+These should form the majority of your test suite, as they offer quick feedback and are easy to maintain.</p>
+<p>In the middle are integration tests, which check that different parts of the system work correctly together.
+They're fewer in number and focus on critical interactions.</p>
+<p>At the top are end-to-end tests, which simulate real user journeys through the system.
+These are the slowest and most fragile, so they should be used sparingly and only for key workflows.</p>
+<p>This layered approach helps teams catch bugs early, run tests quickly, and maintain a healthy, sustainable codebase.
+The goal isn't just more tests, but the right tests at the right levels.</p>
+<h2 id="learning-resources">Learning Resources</h2>
+<ul>
+<li><a href="https://martinfowler.com/articles/practical-test-pyramid.html">Fowler, M. (2014). The Practical Test Pyramid</a></li>
+</ul>
 
 
 
