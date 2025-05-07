@@ -1,11 +1,11 @@
-# Core Engineer Archetype
+# Core Software Engineer Archetype
 
-The Core Engineer represents the foundation of technical excellence at Zühlke.
+The Core Software Engineer represents the foundation of technical excellence at Zühlke.
 This archetype embodies the essential engineering competencies that underpin all software development roles, regardless of specialism. 
-Core Engineers are skilled in writing clean, maintainable code, applying sound engineering principles, and working effectively within delivery teams.
+Core Software Engineers are skilled in writing clean, maintainable code, applying sound engineering principles, and working effectively within delivery teams.
 
 They focus on solving real problems through technology, continuously improving their craft, and contributing to a culture of quality and collaboration.
-The Core Engineer is not just about technical skill - it's about mindset, discipline, and a commitment to delivering value.
+The Core Software Engineer is not just about technical skill - it's about mindset, discipline, and a commitment to delivering value.
 
 This archetype forms the basis for many others and is often the first step in shaping a career path at Zühlke.
 
