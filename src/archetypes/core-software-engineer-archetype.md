@@ -22,7 +22,8 @@ This archetype forms the basis for many others and is often the first step in sh
 ## Advanced Beginner
 
 * [The Test Pyramind](../topics/the-test-pyramid.md)
-* Test Driven Development (TDD)
+* [Test Driven Development (TDD)](../topics/test-driven-development.md)
+* [Extreme Programming Practices](../topics/extreme-programming-practices.md)
 * Technical Documentation Writing
 * SCRUM
 * Continuous Integration
@@ -37,7 +38,6 @@ This archetype forms the basis for many others and is often the first step in sh
 * OWASP Top 10
 * Software Design Modelling & Diagramming Languages (e.g. UML, C4, ERM)
 * Gang of Four Design Patterns
-* XP Programming Practices
 * DevOps Mindset
 * Internet Protocols (e.g. DNS, TCP/IP, HTTP, TLS, etc)
 * Monitoring and Observability
