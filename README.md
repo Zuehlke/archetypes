@@ -1,6 +1,27 @@
 # Zuhlke Engineering Archetypes and Learning Resrouces
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
+## Installing Prerequisites
+
+This project uses [`just`](https://github.com/casey/just) as a command runner and [`uv`](https://docs.astral.sh/uv/) for Python environment and dependency management.
+
+### Install `just`
+
+```bash
+# On macOS (using Homebrew)
+brew install just
+```
+
+See the [just installation guide](https://github.com/casey/just?tab=readme-ov-file#installation) for more options.
+
+### Install `uv`
+
+```bash
+# On macOS (using Homebrew)
+brew install uv
+```
+
+See the [uv installation guide](https://docs.astral.sh/uv/getting-started/installation/) for more options.
 
 ### License
 This work is licensed under a
