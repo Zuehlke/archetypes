@@ -16,3 +16,4 @@ The goal isn't just more tests, but the right tests at the right levels.
 ## Learning Resources
 
 * [Fowler, M. (2014). The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html)
+* [Writing Good Tests with JUnit](https://wd3.myworkday.com/zuehlke/learning/course/63dc6ad4fa471000a4cd260b776e0000?type=9882927d138b100019b6a2df1a46018b) :material-lock: 
