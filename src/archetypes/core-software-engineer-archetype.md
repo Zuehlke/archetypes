@@ -17,7 +17,7 @@ This archetype forms the basis for many others and is often the first step in sh
 * HTML/CSS basics
 * Basics of software development lifecycle
 * Agile basics
-* Version Control Systems
+* [Version Control Systems](../topics/version-control-systems.md)
 
 ## Advanced Beginner
 
@@ -47,7 +47,7 @@ This archetype forms the basis for many others and is often the first step in sh
 
 * SOLID
 * Clean Code and Refactoring
-* Integrated Component Tests
+* [Integrated Component Tests](../topics/integrated-component-tests.md)
 * Technical Architecture Intro
 * Data Modeling adnd Databases
 * Continuous Delivery
