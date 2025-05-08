@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../pair-programming/">
+        <link rel="prev" href="../extreme-programming-practices/">
       
       
-        <link rel="next" href="../the-test-pyramid/">
+        <link rel="next" href="../pair-programming/">
       
       
       <link rel="icon" href="../../assets/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Test Driven Development (TDD) - Zühlke Archetypes</title>
+        <title>Integrated Component Tests - Zühlke Archetypes</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#test-driven-development-tdd" class="md-skip">
+        <a href="#integrated-component-tests" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Test Driven Development (TDD)
+              Integrated Component Tests
             
           </span>
         </div>
@@ -404,10 +404,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../integrated-component-tests/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Integrated Component Tests
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -418,6 +440,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#learning-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Resources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -450,32 +501,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Test Driven Development (TDD)
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../test-driven-development/" class="md-nav__link">
         
   
   
@@ -486,44 +515,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#talks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Talks
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#learning-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Learning Resources
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -609,15 +600,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#talks" class="md-nav__link">
-    <span class="md-ellipsis">
-      Talks
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#learning-resources" class="md-nav__link">
     <span class="md-ellipsis">
       Learning Resources
@@ -645,25 +627,11 @@
   
 
 
-<h1 id="test-driven-development-tdd">Test Driven Development (TDD)</h1>
-<p>Test-driven development (TDD) is a software development approach that inverts the traditional coding process by writing tests before implementing functionality.
-Rather than writing code first and testing later, developers begin by creating automated tests that define the desired behaviour, then write the minimal code needed to pass those tests, and finally refactor to improve quality while ensuring tests still pass.
-This methodical cycle—test, code, refactor leads to more reliable software with fewer bugs, a cleaner architecture, and better documentation of intended behaviour.
-TDD serves as a verification mechanism and a design tool, encouraging developers to think critically about requirements and implementation details before writing a single line of production code.</p>
-<h2 id="talks">Talks</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IN9lftH0cJc?si=T48eo2m1pEBrZi1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/H2I96fuFuH0?si=K_6t6XAeZsjYxb5v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ln4WnxX-wrw?si=QZ8n8ebqKZuMvDaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+<h1 id="integrated-component-tests">Integrated Component Tests</h1>
 <h2 id="learning-resources">Learning Resources</h2>
 <ul>
-<li><a href="https://www.oreilly.com/library/view/tidy-first/9781098151232/">Beck, K. (2023). Tidy First?</a></li>
-<li><a href="https://www.oreilly.com/library/view/growing-object-oriented-software/9780321574442/">Freeman, S. and Pryce, N. (2009). Growing Object-Oriented Software, Guided by Tests</a></li>
-<li><a href="https://wd3.myworkday.com/zuehlke/learning/course/63dc6ad4fa471000a4cd260b776e0000?type=9882927d138b100019b6a2df1a46018b">Writing Good Tests with JUnit</a> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2m6-9a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h1V6a5 5 0 0 1 5-5 5 5 0 0 1 5 5v2zm-6-5a3 3 0 0 0-3 3v2h6V6a3 3 0 0 0-3-3"/></svg></span> </li>
+<li><a href="https://martinfowler.com/articles/microservice-testing/">Testing Strategies in a Microservice Architecture</a></li>
 </ul>
-<p>‌</p>
 
 
 

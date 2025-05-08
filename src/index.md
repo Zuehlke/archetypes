@@ -38,6 +38,12 @@ Archetypes can also help design well-rounded teams for pitches, bids, and projec
 
 This initiative is driven by the [Zühlke Software Excellence practice](https://www.zuehlke.com/en/expertise/software-engineering).
 
+## The Software Engineering Corner
+
+[The Software Engineering Corner](https://software-engineering-corner.zuehlke.com/) is a technical blog curated by engineers at Zühlke.
+The blog features articles on topics such as refactoring legacy systems, implementing micro frontends, enhancing application observability, and adopting green coding practices.
+Each post reflects real-world experiences and lessons learned from client engagements, providing valuable knowledge for software professionals.
+
 ## License
 
 This work is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). 
