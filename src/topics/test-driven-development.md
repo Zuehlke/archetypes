@@ -19,5 +19,3 @@ TDD serves as a verification mechanism and a design tool, encouraging developers
 * [Freeman, S. and Pryce, N. (2009). Growing Object-Oriented Software, Guided by Tests](https://www.oreilly.com/library/view/growing-object-oriented-software/9780321574442/)
 * [Writing Good Tests with JUnit](https://wd3.myworkday.com/zuehlke/learning/course/63dc6ad4fa471000a4cd260b776e0000?type=9882927d138b100019b6a2df1a46018b) :material-lock: 
 
-
-‌

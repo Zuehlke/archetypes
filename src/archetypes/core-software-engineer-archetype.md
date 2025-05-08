@@ -51,7 +51,7 @@ This archetype forms the basis for many others and is often the first step in sh
 * Technical Architecture Intro
 * Data Modeling adnd Databases
 * Continuous Delivery
-* Legacy Codebase
+* [Legacy Systems](../topics/legacy-systems.md)
 * Root Cause Analysis
 * Cloud Computing
 * MultipleLanguages and Paradigms
