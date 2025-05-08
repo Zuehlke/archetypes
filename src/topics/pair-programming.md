@@ -6,4 +6,4 @@ Although it may seem counterintuitive to managers concerned about productivity, 
 
 ## Presentation
 
-<embed src="/assets/zuhlke-mob-and-pair-programming-guide.pdf" type="application/pdf" width="100%" height="800px" />
+<embed src="../../assets/zuhlke-mob-and-pair-programming-guide.pdf" type="application/pdf" width="100%" height="800px" />
