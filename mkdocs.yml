@@ -4,6 +4,8 @@ docs_dir: src
 
 site_dir: docs
 
+repo_url: https://github.com/Zuhlke-Internal/archetypes
+
 markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
