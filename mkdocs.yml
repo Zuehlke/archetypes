@@ -4,7 +4,7 @@ docs_dir: src
 
 site_dir: docs
 
-repo_url: https://github.com/Zuhlke-Internal/archetypes
+repo_url: https://github.com/Zuehlke/archetypes
 
 markdown_extensions:
   - pymdownx.superfences:

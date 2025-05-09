@@ -39,7 +39,7 @@ Please report unacceptable behavior to the SWEX leadership team.
 
 ### Reporting Bugs or Suggesting Enhancements
 
-If you find a bug in the website or have an idea for an enhancement (including new content areas), please check the [issue tracker](https://github.com/Zuhlke-Internal/archetypes/issues) to see if it has already been reported.
+If you find a bug in the website or have an idea for an enhancement (including new content areas), please check the [issue tracker](https://github.com/Zuehlke/archetypes/issues) to see if it has already been reported.
 If not, please open a new issue.
 
 When reporting a bug, please include:
@@ -79,7 +79,7 @@ If you decide to work on an issue, please comment on it to let others know you'r
 
 ### Forking the Repository
 
-Click the "Fork" button at the top right of the [main project repository page](https://github.com/Zuhlke-Internal/archetypes).
+Click the "Fork" button at the top right of the [main project repository page](https://github.com/Zuehlke/archetypes).
 This creates a copy of the repository in your own GitHub account.
 
 ### Creating a Branch
@@ -157,7 +157,7 @@ To ensure consistency and quality, please adhere to the following guidelines whe
 ## Getting Help
 
 If you have questions or need help with any aspect of contributing, please:
-* Open an issue on the [issue tracker](https://github.com/Zuhlke-Internal/archetypes/issues) and tag it with `question`.
+* Open an issue on the [issue tracker](https://github.com/Zuehlke/archetypes/issues) and tag it with `question`.
 
 We're happy to help you get started!
 
