@@ -1,5 +1,5 @@
 
-# Contributor Covenant Code of Conduct
+# Contributing to archetypes
 
 ## Our Pledge
 
