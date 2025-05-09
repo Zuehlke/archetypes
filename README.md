@@ -1,4 +1,4 @@
-# Zuhlke Engineering Archetypes and Learning Resrouces
+# Zuhlke Engineering Archetypes and Learning Resources
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 ## Installing Prerequisites
