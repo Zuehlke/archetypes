@@ -1,8 +1,14 @@
 repos:
--   repo: local
-    hooks:    
-    -   id: mkdocs-build
-        name: MkDocs Build
-        entry: bash -c "just build"
-        language: system
-        pass_filenames: false
+    - repo: local
+      hooks:
+          - id: mkdocs-lint
+            name: Lint
+            entry: bash -c "just fmt"
+            language: system
+            pass_filenames: false
+
+          - id: mkdocs-build
+            name: MkDocs Build
+            entry: bash -c "just build"
+            language: system
+            pass_filenames: false

@@ -8,4 +8,5 @@ dependencies = [
     "mkdocs>=1.6.1",
     "mkdocs-material>=9.6.12",
     "pre-commit>=4.2.0",
+    "pymarkdownlnt>=0.9.29",
 ]

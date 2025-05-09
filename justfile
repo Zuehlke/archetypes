@@ -6,3 +6,6 @@ serve:
 
 install:
     uv run pre-commit install
+
+fmt:
+    uv run pymarkdown scan ./src

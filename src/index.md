@@ -46,6 +46,6 @@ Each post reflects real-world experiences and lessons learned from client engage
 
 ## License
 
-This work is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). 
+This work is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ![CC](https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc-sa.png)
