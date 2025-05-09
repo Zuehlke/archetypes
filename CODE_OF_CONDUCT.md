@@ -1,5 +1,5 @@
 
-# Contributing to archetypes
+# Code of Conduct - archetypes
 
 ## Our Pledge
 
