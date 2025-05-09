@@ -1,8 +1,8 @@
-build: clean
-    uv run mkdocs build
+build:
+    uv run mkdocs build --clean --strict
 
 serve:
     uv run mkdocs serve
 
-clean:
-    rm -rf ./docs/*
+install:
+    uv run pre-commit install

@@ -23,6 +23,14 @@ brew install uv
 
 See the [uv installation guide](https://docs.astral.sh/uv/getting-started/installation/) for more options.
 
+### Install `pre-commit` hooks
+
+```bash
+just install
+```
+
+The `pre-commit` hook will rebuild the static website before every commit.
+
 ### License
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
