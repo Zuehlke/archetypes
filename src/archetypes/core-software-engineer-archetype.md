@@ -32,7 +32,7 @@ This archetype forms the basis for many others and is often the first step in sh
 * NoSQL Databases
 * Debugging
 * OS Shell basics
-* Prompt Engineering Skills for Engineers
+* [AI Assisted Development Tools and Workflows](../topics/ai-assisted-development-tools-and-workflows.md)
 * Data Structures
 * Security Basics
 * OWASP Top 10
