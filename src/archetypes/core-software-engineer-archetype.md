@@ -76,7 +76,6 @@ This archetype forms the basis for many others and is often the first step in sh
 * Profiling & performance tuning
 * Enterprise Design Patterns
 * Building for Scale
-* API as a Product
 * Distributed Systems Theory & Practices
 * Facilitating Agile
 * Mentoring and Coaching
