@@ -80,7 +80,6 @@ This archetype forms the basis for many others and is often the first step in sh
 * Distributed Systems Theory & Practices
 * Facilitating Agile
 * Mentoring and Coaching
-* Agile @ Scale
 * Effective Collaboration
 * Chaos Engineering
 
