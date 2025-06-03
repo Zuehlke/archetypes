@@ -65,7 +65,6 @@ This archetype forms the basis for many others and is often the first step in sh
 * Component Architectures
 * Shifting Left Security
 * Communication and Presentation Skills
-* User Story Mapping
 * Non Functional Requirements
 
 ## Proficient
