@@ -60,7 +60,6 @@ This archetype forms the basis for many others and is often the first step in sh
 * REST design
 * General API Design and Security Principles
 * Domain Driven Design
-* Cloud Native 12 Factor App Principles
 * Performance and Scalability
 * Component Architectures
 * Shifting Left Security
