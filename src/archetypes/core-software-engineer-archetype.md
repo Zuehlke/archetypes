@@ -91,5 +91,4 @@ This archetype forms the basis for many others and is often the first step in sh
 * Ethical and Responsible Tech
 * GDPR and other governance requirements
 * Knowledge of intellectual property laws, data privacy and ethical hacking practices
-* Economics & FinOps
 * Emerging Technologies & Tech Trends
