@@ -33,7 +33,7 @@ Please read it carefully to ensure a smooth and effective contribution process.
 
 This project and everyone participating in it is governed by the archetypes Code of Conduct.
 By participating, you are expected to uphold this code.
-Please report unacceptable behavior to the SWEX leadership team.
+Please report unacceptable behaviour to the SWEX leadership team.
 
 ## How Can I Contribute?
 
