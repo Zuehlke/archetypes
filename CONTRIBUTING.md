@@ -89,6 +89,20 @@ Create a descriptive branch name for your changes:
 
 Example: `git checkout -b content/introduction-to-python`
 
+### Validating Your Changes
+Before committing your changes, ensure they are valid and do not break the build:
+```bash
+just fmt
+just build
+```
+
+This will format your code and rebuild the static website to ensure everything is up-to-date.
+
+You can also run the local development server to visually inspect your changes:
+```bash
+just serve
+```
+
 ### Committing Your Changes
 
 Make your changes to the codebase or add your new content files.
