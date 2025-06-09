@@ -33,7 +33,7 @@ Please read it carefully to ensure a smooth and effective contribution process.
 
 This project and everyone participating in it is governed by the archetypes Code of Conduct.
 By participating, you are expected to uphold this code.
-Please report unacceptable behavior to the SWEX leadership team.
+Please report unacceptable behaviour to the SWEX leadership team.
 
 ## How Can I Contribute?
 
@@ -89,11 +89,25 @@ Create a descriptive branch name for your changes:
 
 Example: `git checkout -b content/introduction-to-python`
 
+### Validating Your Changes
+Before committing your changes, ensure they are valid and do not break the build:
+```bash
+just fmt
+just build
+```
+
+This will format your code and rebuild the static website to ensure everything is up-to-date.
+
+You can also run the local development server to visually inspect your changes:
+```bash
+just serve
+```
+
 ### Committing Your Changes
 
 Make your changes to the codebase or add your new content files.
-Stage your changes: `git add .` (to add all changes) or `git add path/to/your/file.md` (to add specific files).
-Commit your changes: `git commit -m "Your descriptive commit message"`
+Stage your changes, including newly built static web files to ensure you pass the pre-commit hooks: `git add .`.
+Commit your changes: `git commit -m "Your descriptive commit message"`.
 
 ### Writing Good Commit Messages
 
