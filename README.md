@@ -11,7 +11,7 @@ The project is structured into several key components:
     -  `src/archetypes/` - Contains archetype definitions, which describe the competencies and skills expected at various stages of a software engineer's career.
     -  `src/topics/` - Contains definitions of topics that are relevant to the archetypes, detailing the specific skills, knowledge areas and any learning resources associated with them.
     - `src/assets/` - Contains images and other assets used in the documentation.
-- `docs/` - A static website generated from these definitions, providing an accessible and user-friendly interface for exploring the archetypes and learning pathways.
+- `_site/` - A static website generated from these definitions using [MkDocs](https://www.mkdocs.org/), providing an accessible and user-friendly interface for exploring the archetypes and learning pathways. *Not to be edited directly or committed to the repository*.
 
 ## Contributing
 We welcome contributions to the Zühlke Archetypes and Learning Pathways project! Whether you're a seasoned developer or just starting out, your insight and experiences can help shape a more comprehensive and useful resource for everyone.
