@@ -106,7 +106,7 @@ just serve
 ### Committing Your Changes
 
 Make your changes to the codebase or add your new content files.
-Stage your changes, including newly built static web files to ensure you pass the pre-commit hooks: `git add .`.
+Stage your changes: `git add .` (to add all changes) or `git add path/to/your/file.md` (to add specific files).
 Commit your changes: `git commit -m "Your descriptive commit message"`.
 
 ### Writing Good Commit Messages
