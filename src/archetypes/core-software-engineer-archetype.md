@@ -86,5 +86,5 @@ This archetype forms the basis for many others and is often the first step in sh
 * Site Reliability Engineering for Developers
 * Ethical and Responsible Tech
 * GDPR and other governance requirements
-* Knowledge of intellectual property laws, data privacy and ethical hacking practices
+* Legal & Ethical Awareness in Software Development
 * Emerging Technologies & Tech Trends
