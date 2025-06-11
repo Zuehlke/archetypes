@@ -2,7 +2,7 @@ site_name: Zühlke Archetypes
 
 docs_dir: src
 
-site_dir: docs
+site_dir: _site
 
 repo_url: https://github.com/Zuehlke/archetypes
 
