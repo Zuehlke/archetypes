@@ -11,12 +11,12 @@ This archetype forms the basis for many others and is often the first step in sh
 
 ## Novice
 
-* Developer Tooling basics
-* Primary Programming Language
-* Collaboration Tools
-* HTML/CSS basics
-* Basics of software development lifecycle
-* Agile basics
+* [Developer Tooling basics](../topics/developer-tooling-basics.md)
+* [Primary Programming Language](../topics/primary-programming-language.md)
+* [Collaboration Tools](../topics/collaboration-tools.md)
+* [HTML/CSS basics](../topics/html-css-basics.md)
+* [Basics of software development lifecycle](../topics/software-development-lifecycle-basics.md)
+* [Agile basics](../topics/agile-basics.md)
 * [Version Control Systems](../topics/version-control-systems.md)
 
 ## Advanced Beginner
@@ -24,67 +24,67 @@ This archetype forms the basis for many others and is often the first step in sh
 * [The Test Pyramind](../topics/the-test-pyramid.md)
 * [Test Driven Development (TDD)](../topics/test-driven-development.md)
 * [Extreme Programming Practices](../topics/extreme-programming-practices.md)
-* Technical Documentation Writing
-* SCRUM
-* Continuous Integration
-* User Stories
-* Relational Databases
-* NoSQL Databases
-* Debugging
-* OS Shell basics
+* [Technical Documentation Writing](../topics/technical-documentation-writing.md)
+* [SCRUM](../topics/scrum.md)
+* [Continuous Integration](../topics/continuous-integration.md)
+* [User Stories](../topics/user-stories.md)
+* [Relational Databases](../topics/relational-databases.md)
+* [NoSQL Databases](../topics/nosql-databases.md)
+* [Debugging](../topics/debugging.md)
+* [OS Shell Basics](../topics/os-shell-basics.md)
 * [AI Assisted Development Tools and Workflows](../topics/ai-assisted-development-tools-and-workflows.md)
-* Data Structures
-* Security Basics
-* OWASP Top 10
-* Software Design Modelling & Diagramming Languages (e.g. UML, C4, ERM)
-* Gang of Four Design Patterns
-* DevOps Mindset
-* Internet Protocols (e.g. DNS, TCP/IP, HTTP, TLS, etc)
-* Monitoring and Observability
-* Containers and Orchestration
+* [Data Structures](../topics/data-structures.md)
+* [Security Basics](../topics/security-basics.md)
+* [OWASP Top 10](../topics/owasp-top-10.md)
+* [Software Design Modelling & Diagramming Languages](../topics/software-design-modelling.md)
+* [Gang of Four Design Patterns](../topics/gang-of-four-design-patterns.md)
+* [DevOps Mindset](../topics/devops-mindset.md)
+* [Internet Protocols](../topics/internet-protocols.md)
+* [Monitoring and Observability](../topics/monitoring-and-observability.md)
+* [Containers and Orchestration](../topics/containers-and-orchestration.md)
 
 ## Competent
 
-* SOLID
-* Clean Code and Refactoring
+* [SOLID](../topics/solid.md)
+* [Clean Code and Refactoring](../topics/clean-code-and-refactoring.md)
 * [Integrated Component Tests](../topics/integrated-component-tests.md)
-* Technical Architecture Intro
-* Data Modeling adnd Databases
-* Continuous Delivery
+* [Technical Architecture Intro](../topics/technical-architecture-intro.md)
+* [Data Modeling and Databases](../topics/data-modeling-and-databases.md)
+* [Continuous Delivery](../topics/continuous-delivery.md)
 * [Legacy Systems](../topics/legacy-systems.md)
-* Root Cause Analysis
-* Cloud Computing
-* MultipleLanguages and Paradigms
-* Automated end-to-end System Testing
-* Styleguides and Linting
-* REST design
-* General API Design and Security Principles
-* Domain Driven Design
-* Performance and Scalability
-* Component Architectures
-* Shifting Left Security
-* Communication and Presentation Skills
-* Non Functional Requirements
+* [Root Cause Analysis](../topics/root-cause-analysis.md)
+* [Cloud Computing](../topics/cloud-computing.md)
+* [Multiple Languages and Paradigms](../topics/multiple-languages-and-paradigms.md)
+* [Automated End-to-End System Testing](../topics/automated-end-to-end-system-testing.md)
+* [Styleguides and Linting](../topics/styleguides-and-linting.md)
+* [REST Design](../topics/rest-design.md)
+* [General API Design and Security Principles](../topics/general-api-design-and-security-principles.md)
+* [Domain Driven Design](../topics/domain-driven-design.md)
+* [Performance and Scalability](../topics/performance-and-scalability.md)
+* [Component Architectures](../topics/component-architectures.md)
+* [Shifting Left Security](../topics/shifting-left-security.md)
+* [Communication and Presentation Skills](../topics/communication-and-presentation-skills.md)
+* [Non Functional Requirements](../topics/non-functional-requirements.md)
 
 ## Proficient
 
-* Advanced Programming
-* Building Evolutionary Architectures
-* Threat Modelling
-* Profiling & performance tuning
-* Enterprise Design Patterns
-* Building for Scale
-* Distributed Systems Theory & Practices
-* Facilitating Agile
-* Mentoring and Coaching
-* Effective Collaboration
-* Chaos Engineering
+* [Advanced Programming](../topics/advanced-programming.md)
+* [Building Evolutionary Architectures](../topics/building-evolutionary-architectures.md)
+* [Threat Modelling](../topics/threat-modelling.md)
+* [Profiling and Performance Tuning](../topics/profiling-and-performance-tuning.md)
+* [Enterprise Design Patterns](../topics/enterprise-design-patterns.md)
+* [Building for Scale](../topics/building-for-scale.md)
+* [Distributed Systems Theory & Practices](../topics/distributed-systems-theory-and-practices.md)
+* [Facilitating Agile](../topics/facilitating-agile.md)
+* [Mentoring and Coaching](../topics/mentoring-and-coaching.md)
+* [Effective Collaboration](../topics/effective-collaboration.md)
+* [Chaos Engineering](../topics/chaos-engineering.md)
 
 ## Expert
 
-* Systems and Complexity Sciences
-* Site Reliability Engineering for Developers
-* Ethical and Responsible Tech
-* GDPR and other governance requirements
-* Knowledge of intellectual property laws, data privacy and ethical hacking practices
-* Emerging Technologies & Tech Trends
+* [Systems and Complexity Sciences](../topics/systems-and-complexity-sciences.md)
+* [Site Reliability Engineering for Developers](../topics/site-reliability-engineering-for-developers.md)
+* [Ethical and Responsible Tech](../topics/ethical-and-responsible-tech.md)
+* [GDPR and Other Governance Requirements](../topics/gdpr-and-other-governance-requirements.md)
+* [Intellectual Property Laws and Ethical Hacking](../topics/intellectual-property-laws-and-ethical-hacking.md)
+* [Emerging Technologies and Tech Trends](../topics/emerging-technologies-and-tech-trends.md)
