@@ -1,6 +1,6 @@
 # Fullstack Web Engineer Archetype
 
-The Fullstack Web Engineer builds upon the foundation of the Core Software Engineer, specializing in both backend and frontend development. This archetype represents engineers who are proficient in creating end-to-end web applications, integrating backend services with modern frontend frameworks, and ensuring seamless user experiences. 
+The Fullstack Web Engineer builds upon the foundation of the [Core Software Engineer](core-software-engineer-archetype.md), specializing in both backend and frontend development. This archetype represents engineers who are proficient in creating end-to-end web applications, integrating backend services with modern frontend frameworks, and ensuring seamless user experiences. 
 
 Fullstack Web Engineers are skilled in working across the stack, leveraging their expertise in backend ecosystems such as Java, .NET, and Node.js, as well as frontend frameworks like React and Angular. They focus on delivering scalable, maintainable, and high-performing web applications while adhering to best practices in software engineering.
 
