@@ -71,7 +71,7 @@ This stage focuses on recognizing patterns in FSI solutions — how data models,
 * [Capital: Definition, How It's Used, Structure, and Types in
     Business](https://www.investopedia.com/terms/c/capital.asp)
 
-#### Financial crimes
+### Financial crimes
 
 * [What Is White-Collar Crime? Meaning, Types, and
     Examples](https://www.investopedia.com/terms/w/white-collar-crime.asp)
