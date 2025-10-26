@@ -1,10 +1,10 @@
 # Data Architecture
 
-This document describes the data model for the Zühlke Archetypes project, which supports career pathway definitions and learning resources.
+This document describes the data model for the Zühlke Archetypes project, which supports career pathway definitions and learning resources using YAML frontmatter embedded in markdown files.
 
 ## Overview
 
-The data architecture defines the structure and relationships between archetypes, skill stages, topics, and learning resources. For context on the decision to move to structured data, see [ADR-0001](./ADRs/ADR-0001.md).
+The data architecture defines the structure and relationships between archetypes, skill stages, topics, and learning resources. Data is stored as YAML frontmatter within existing markdown files, processed by MkDocs macros during build. For context on the decision to use frontmatter, see [ADR-0001](./ADRs/ADR-0001.md).
 
 ## Entity Model
 
@@ -92,6 +92,23 @@ Individual learning materials embedded directly within topics (not normalized as
 
 ## Implementation Notes
 
+### YAML Frontmatter Structure
+Data is stored as YAML frontmatter at the top of markdown files:
+
+```markdown
+---
+# YAML frontmatter contains structured data
+skill_stages:
+  - name: "Novice"
+    topics: ["version-control-systems", "html-css-basics"]
+---
+
+# Markdown content follows
+Description and rich content here...
+
+{{ render_skill_stages() }}  # Macro uses frontmatter data
+```
+
 ### Topic References
 - Each skill stage contains an array of topic references using **URL slugs**
 - Example: `"version-control-systems"` references `/topics/version-control-systems.md`
@@ -106,10 +123,11 @@ All entities use slug-based identifiers for cross-referencing:
 - **Learning Resources**: Can optionally have slugs for cross-referencing between topics
 
 ### Learning Resource Identification
-Learning resources are **embedded directly within topics** rather than being separate referenced entities:
+Learning resources are **embedded within topic frontmatter** rather than being separate referenced entities:
 
 ```yaml
-# version-control-systems.yaml
+---
+# In topic frontmatter
 learning_resources:
   - type: "external_link"
     title: "Learn Git Branching"
@@ -122,6 +140,12 @@ learning_resources:
     url: "https://git-scm.com/book"
     publisher: "Apress"
     year: 2014
+---
+
+# Markdown content
+Description of version control systems...
+
+{{ render_learning_resources() }}  # Generates from frontmatter
 ```
 
 **Rationale:**
@@ -152,9 +176,23 @@ Topics can reference related topics using the same slug-based system to create l
 
 Example:
 ```yaml
-# extreme-programming-practices.yaml
+---
+# In extreme-programming-practices.md frontmatter
 cross_references:
   - "test-driven-development"
   - "pair-programming"
   - "version-control-systems"
+---
+
+# Markdown content
+Description of XP practices...
+
+{{ render_cross_references() }}  # Generates from frontmatter
 ```
+
+### Build Process
+1. **MkDocs reads** markdown files with YAML frontmatter
+2. **Frontmatter extracted** automatically (available as `page.meta`)
+3. **Macro plugin processes** `{{ macro_calls() }}` using frontmatter data
+4. **JSON Schema validation** ensures frontmatter structure is correct
+5. **Standard MkDocs build** generates static site
