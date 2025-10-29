@@ -7,6 +7,7 @@ to generate structured content for archetypes and topics.
 
 import yaml
 import jsonschema
+import json
 from pathlib import Path
 from typing import Dict, List, Any
 
@@ -34,8 +35,8 @@ def define_env(env):
             # Get frontmatter from current page
             frontmatter = env.page.meta
             
-            # Validate frontmatter structure (optional for now)
-            # validate_archetype_schema(frontmatter)
+            # Validate frontmatter structure
+            validate_archetype_schema(frontmatter)
             
             # Get skill stages from frontmatter
             skill_stages = frontmatter.get('skill_stages', [])
@@ -81,6 +82,9 @@ def define_env(env):
         try:
             # Get frontmatter from current page
             frontmatter = env.page.meta
+            
+            # Validate frontmatter structure  
+            validate_topic_schema(frontmatter)
             
             # Get learning resources from frontmatter
             resources = frontmatter.get('learning_resources', [])
@@ -134,6 +138,10 @@ def define_env(env):
         """
         try:
             frontmatter = env.page.meta
+            
+            # Validate frontmatter structure  
+            validate_topic_schema(frontmatter)
+            
             cross_refs = frontmatter.get('cross_references', [])
             
             if not cross_refs:
@@ -189,10 +197,43 @@ def validate_archetype_schema(frontmatter: Dict[str, Any]) -> None:
     Raises:
         jsonschema.ValidationError: If frontmatter is invalid
     """
-    # TODO: Implement JSON schema validation
-    # For now, just basic validation
-    if 'skill_stages' not in frontmatter:
-        raise ValueError("Archetype frontmatter must contain 'skill_stages'")
+    try:
+        # Load schema files
+        schema_dir = Path(__file__).parent / "schemas"
+        
+        # Load common schema for references
+        with open(schema_dir / "common.schema.json", 'r') as f:
+            common_schema = json.load(f)
+        
+        # Load archetype schema
+        with open(schema_dir / "archetype.schema.json", 'r') as f:
+            archetype_schema = json.load(f)
+        
+        # Create resolver for schema references
+        resolver = jsonschema.RefResolver(
+            base_uri="file://" + str(schema_dir) + "/",
+            referrer=archetype_schema,
+            store={
+                "common.schema.json": common_schema
+            }
+        )
+        
+        # Validate frontmatter
+        jsonschema.validate(
+            instance=frontmatter,
+            schema=archetype_schema,
+            resolver=resolver
+        )
+        
+    except FileNotFoundError as e:
+        # Schema files not found - skip validation for now
+        pass
+    except jsonschema.ValidationError as e:
+        # Re-raise validation errors
+        raise e
+    except Exception as e:
+        # Log other errors but don't break the build
+        print(f"Warning: Schema validation failed: {str(e)}")
 
 
 def validate_topic_schema(frontmatter: Dict[str, Any]) -> None:
@@ -205,5 +246,40 @@ def validate_topic_schema(frontmatter: Dict[str, Any]) -> None:
     Raises:
         jsonschema.ValidationError: If frontmatter is invalid
     """
-    # TODO: Implement JSON schema validation
-    pass
+    try:
+        # Load schema files
+        schema_dir = Path(__file__).parent / "schemas"
+        
+        # Load common schema for references
+        with open(schema_dir / "common.schema.json", 'r') as f:
+            common_schema = json.load(f)
+        
+        # Load topic schema
+        with open(schema_dir / "topic.schema.json", 'r') as f:
+            topic_schema = json.load(f)
+        
+        # Create resolver for schema references
+        resolver = jsonschema.RefResolver(
+            base_uri="file://" + str(schema_dir) + "/",
+            referrer=topic_schema,
+            store={
+                "common.schema.json": common_schema
+            }
+        )
+        
+        # Validate frontmatter
+        jsonschema.validate(
+            instance=frontmatter,
+            schema=topic_schema,
+            resolver=resolver
+        )
+        
+    except FileNotFoundError as e:
+        # Schema files not found - skip validation for now
+        pass
+    except jsonschema.ValidationError as e:
+        # Re-raise validation errors
+        raise e
+    except Exception as e:
+        # Log other errors but don't break the build
+        print(f"Warning: Schema validation failed: {str(e)}")
