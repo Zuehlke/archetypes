@@ -5,11 +5,10 @@ This module provides MkDocs macros that process YAML frontmatter
 to generate structured content for archetypes and topics.
 """
 
-import yaml
 import jsonschema
 import json
 from pathlib import Path
-from typing import Dict, List, Any
+from typing import Dict, Any
 
 
 def define_env(env):
@@ -56,7 +55,7 @@ def define_env(env):
                 if topics:
                     for topic in topics:
                         # Convert topic slug to link
-                        topic_link = f"[{topic_slug_to_title(topic)}](../topics/{topic}.md)"
+                        topic_link = f"[{topic_slug_to_title(topic)}](/topics/{topic}/)"
                         result.append(f"* {topic_link}")
                 else:
                     result.append("* No topics defined")
@@ -211,7 +210,7 @@ def validate_archetype_schema(frontmatter: Dict[str, Any]) -> None:
         
         # Create resolver for schema references
         resolver = jsonschema.RefResolver(
-            base_uri="file://" + str(schema_dir) + "/",
+            base_uri=schema_dir.as_uri() + "/",
             referrer=archetype_schema,
             store={
                 "common.schema.json": common_schema
@@ -260,7 +259,7 @@ def validate_topic_schema(frontmatter: Dict[str, Any]) -> None:
         
         # Create resolver for schema references
         resolver = jsonschema.RefResolver(
-            base_uri="file://" + str(schema_dir) + "/",
+            base_uri=schema_dir.as_uri() + "/",
             referrer=topic_schema,
             store={
                 "common.schema.json": common_schema

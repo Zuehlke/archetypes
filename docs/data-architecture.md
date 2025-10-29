@@ -4,7 +4,7 @@ This document describes the data model for the Zühlke Archetypes project, which
 
 ## Overview
 
-The data architecture defines the structure and relationships between archetypes, skill stages, topics, and learning resources. Data is stored as YAML frontmatter within existing markdown files, processed by MkDocs macros during build. For context on the decision to use frontmatter, see [ADR-0001](./ADRs/ADR-0001.md).
+The data architecture defines the structure and relationships between archetypes, skill stages, topics, and learning resources. Data is stored as YAML frontmatter within existing markdown files, processed by MkDocs macros during build. For context on the decision to use frontmatter, see [ADR-0001](ADRs/ADR-0001.md).
 
 ## Entity Model
 
