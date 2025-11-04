@@ -1,7 +1,5 @@
 ---
 title: AI Assisted Development Tools and Workflows
-description: >
-  The integration of AI-assisted development tools and workflows enhances productivity, improves code quality, and streamlines engineering processes. This topic explores how AI tools are transforming the way software engineers build, test, and maintain applications.
 learning_resources: []
 ---
 

@@ -1,5 +1,11 @@
+---
+title: Integrated Component Tests
+learning_resources:
+  - type: "external_link"
+    title: "Testing Strategies in a Microservice Architecture"
+    url: "https://martinfowler.com/articles/microservice-testing/"
+---
+
 # Integrated Component Tests
 
-## Learning Resources
-
-* [Testing Strategies in a Microservice Architecture](https://martinfowler.com/articles/microservice-testing/)
+{{ render_learning_resources() }}
