@@ -11,10 +11,9 @@ skill_stages:
       - primary-programming-language
       - collaboration-tools
       - html-css-basics
-      - software-development-lifecycle
+      - basics-of-software-development-lifecycle
       - agile-basics
       - version-control-systems
-
   - name: "Advanced Beginner"
     topics:
       - the-test-pyramid
@@ -32,36 +31,34 @@ skill_stages:
       - data-structures
       - security-basics
       - owasp-top-10
-      - software-design-modelling-and-diagramming-languages
+      - software-design-modelling-and-diagramming-languages-eg-uml-c4-erm
       - gang-of-four-design-patterns
       - devops-mindset
-      - internet-protocols
+      - internet-protocols-eg-dns-tcp-ip-http-tls-etc
       - monitoring-and-observability
       - containers-and-orchestration
-
   - name: "Competent"
     topics:
-      - solid-principles
+      - solid
       - clean-code-and-refactoring
       - integrated-component-tests
       - technical-architecture-intro
-      - data-modelling-and-databases
+      - data-modeling-adnd-databases
       - continuous-delivery
       - legacy-systems
       - root-cause-analysis
       - cloud-computing
-      - multiple-languages-and-paradigms
+      - multiplelanguages-and-paradigms
       - automated-end-to-end-system-testing
       - styleguides-and-linting
       - rest-design
-      - api-design-and-security-principles
+      - general-api-design-and-security-principles
       - domain-driven-design
       - performance-and-scalability
       - component-architectures
       - shifting-left-security
       - communication-and-presentation-skills
       - non-functional-requirements
-
   - name: "Proficient"
     topics:
       - advanced-programming
@@ -75,15 +72,25 @@ skill_stages:
       - mentoring-and-coaching
       - effective-collaboration
       - chaos-engineering
-
   - name: "Expert"
     topics:
       - systems-and-complexity-sciences
       - site-reliability-engineering-for-developers
       - ethical-and-responsible-tech
-      - gdpr-and-governance-requirements
-      - intellectual-property-and-data-privacy
-      - emerging-technologies-and-trends
+      - gdpr-and-other-governance-requirements
+      - knowledge-of-intellectual-property-laws-data-privacy-and-ethical-hacking-practices
+      - emerging-technologies-and-tech-trends
 ---
+
+# Core Software Engineer Archetype
+
+The Core Software Engineer represents the foundation of technical excellence at Zühlke.
+This archetype embodies the essential engineering competencies that underpin all software development roles, regardless of specialism.
+Core Software Engineers are skilled in writing clean, maintainable code, applying sound engineering principles, and working effectively within delivery teams.
+
+They focus on solving real problems through technology, continuously improving their craft, and contributing to a culture of quality and collaboration.
+The Core Software Engineer is not just about technical skill - it's about mindset, discipline, and a commitment to delivering value.
+
+This archetype forms the basis for many others and is often the first step in shaping a career path at Zühlke.
 
 {{ render_skill_stages() }}
