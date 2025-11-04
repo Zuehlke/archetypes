@@ -43,12 +43,12 @@ skill_stages:
       - clean-code-and-refactoring
       - integrated-component-tests
       - technical-architecture-intro
-      - data-modeling-adnd-databases
+      - data-modeling-and-databases
       - continuous-delivery
       - legacy-systems
       - root-cause-analysis
       - cloud-computing
-      - multiplelanguages-and-paradigms
+      - multiple-languages-and-paradigms
       - automated-end-to-end-system-testing
       - styleguides-and-linting
       - rest-design
