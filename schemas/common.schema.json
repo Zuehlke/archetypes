@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/Zuehlke/archetypes/schemas/common.schema.json",
+  "title": "Common Schema Definitions",
+  "description": "Shared schema definitions for Zühlke Archetypes project",
+  
+  "definitions": {
+    "skill_stage_name": {
+      "type": "string",
+      "enum": [
+        "Novice",
+        "Advanced Beginner", 
+        "Competent",
+        "Proficient",
+        "Expert"
+      ],
+      "description": "Dreyfus model skill acquisition stages"
+    },
+    
+    "topic_slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "URL-safe slug matching topic file names (lowercase, hyphens, no spaces)"
+    },
+    
+    "learning_resource_type": {
+      "type": "string",
+      "enum": [
+        "external_link",
+        "book", 
+        "course",
+        "video",
+        "pdf",
+        "talk",
+        "presentation"
+      ],
+      "description": "Types of learning resources"
+    },
+    
+    "learning_resource": {
+      "type": "object",
+      "properties": {
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "description": "Optional slug for tracking/analytics"
+        },
+        "type": {
+          "$ref": "#/definitions/learning_resource_type"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Display name of the learning resource"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to the learning resource"
+        },
+        "is_internal": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether resource requires internal access"
+        },
+        "description": {
+          "type": "string",
+          "description": "Optional description of the resource"
+        },
+        "embed_code": {
+          "type": "string",
+          "description": "Optional embed code for videos/pdfs"
+        },
+        "author": {
+          "type": "string", 
+          "description": "Author name (mainly for books)"
+        },
+        "publisher": {
+          "type": "string",
+          "description": "Publisher name (mainly for books)"
+        },
+        "year": {
+          "type": "integer",
+          "minimum": 1990,
+          "maximum": 2030,
+          "description": "Publication year (mainly for books)"
+        }
+      },
+      "required": ["type", "title", "url"],
+      "additionalProperties": false,
+      "description": "A learning resource with type-specific properties"
+    }
+  }
+}
