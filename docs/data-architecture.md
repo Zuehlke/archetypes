@@ -100,7 +100,9 @@ Data is stored as YAML frontmatter at the top of markdown files:
 # YAML frontmatter contains structured data
 skill_stages:
   - name: "Novice"
-    topics: ["version-control-systems", "html-css-basics"]
+    topics: 
+      - "version-control-systems"
+      - "html-css-basics"
 ---
 
 # Markdown content follows
