@@ -4,6 +4,10 @@ description: >
   The Core Software Engineer represents the foundation of technical excellence at Zühlke.
   This archetype embodies the essential engineering competencies that underpin all software development roles,
   regardless of specialism.
+required_tags:
+  archetypes: ["core-software-engineer"]
+tags:
+  archetypes: ["core"]
 skill_stages:
   - name: "Novice"
     topics:
@@ -29,6 +33,7 @@ skill_stages:
       - os-shell-basics
       - ai-assisted-development-tools-and-workflows
       - data-structures
+      - pair-programming
       - secure-coding-practices
       - software-design-modelling-and-diagramming-languages
       - gang-of-four-design-patterns
@@ -87,4 +92,8 @@ The Core Software Engineer is not just about technical skill - it's about mindse
 
 This archetype forms the basis for many others and is often the first step in shaping a career path at Zühlke.
 
-{{ render_skill_stages() }}
+<!-- {{ debug_all_topics() }}
+{{ debug_filtered() }}
+{{ debug_grouped() }} -->
+
+{{ render_dynamic_skill_stages() }}

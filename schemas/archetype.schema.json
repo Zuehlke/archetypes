@@ -16,6 +16,20 @@
       "minLength": 1,
       "description": "Overview explaining the archetype's purpose and scope"
     },
+    "required_tags": {
+      "type": "object",
+      "properties": {
+        "archetypes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": ["archetypes"],
+      "additionalProperties": false
+    },
     "skill_stages": {
       "type": "array",
       "minItems": 1,
@@ -41,7 +55,7 @@
     }
   },
   
-  "required": ["title", "description", "skill_stages"],
+  "required": ["title", "description"],
   "additionalProperties": true,
   
   "examples": [

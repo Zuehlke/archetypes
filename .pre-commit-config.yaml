@@ -1,14 +1,32 @@
 repos:
-    - repo: local
-      hooks:
-          - id: mkdocs-lint
-            name: Lint
-            entry: bash -c "just fmt"
-            language: system
-            pass_filenames: false
+  - repo: local
+    hooks:
+      - id: mkdocs-lint
+        name: Lint
+        entry: bash -c "just fmt"
+        language: system
+        pass_filenames: false
 
-          - id: mkdocs-build
-            name: MkDocs Build
-            entry: bash -c "just build"
-            language: system
-            pass_filenames: false
+      - id: mkdocs-build
+        name: MkDocs Build
+        entry: bash -c "just build"
+        language: system
+        pass_filenames: false
+
+      - id: validate-duplicates
+        name: Validate Topic Duplicates
+        entry: bash -c "python3 scripts/check_duplicates.py"
+        language: system
+        pass_filenames: false
+
+      - id: validate-titles
+        name: Validate Topic Titles
+        entry: bash -c "python3 scripts/validate_titles.py"
+        language: system
+        pass_filenames: false
+
+      - id: validate-categories
+        name: Validate Topic Categories
+        entry: bash -c "python3 scripts/validate_categories.py"
+        language: system
+        pass_filenames: false
