@@ -33,7 +33,7 @@
     }
   },
   
-  "required": ["title", "description"],
+  "required": ["title"],
   "additionalProperties": true,
   
   "examples": [

@@ -1,3 +1,8 @@
+---
+title: AI Assisted Development Tools and Workflows
+learning_resources: []
+---
+
 # AI Assisted Development Tools and Workflows
 
 In the rapidly evolving landscape of software engineering, the integration of AI-assisted development tools and workflows has become increasingly vital. These tools leverage artificial intelligence to enhance productivity, improve code quality, and streamline development processes. Here are a few reasons why this topic is essential for all software engineers:
@@ -14,4 +19,4 @@ In the rapidly evolving landscape of software engineering, the integration of AI
 
 Incorporating AI-assisted development tools and workflows is not just a trend but a necessity for staying competitive and delivering high-quality software in today's fast-paced tech environment.
 
-## Learning Resources
+{{ render_learning_resources() }}
