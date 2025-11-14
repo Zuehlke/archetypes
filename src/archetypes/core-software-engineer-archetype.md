@@ -30,10 +30,10 @@ skill_stages:
       - ai-assisted-development-tools-and-workflows
       - data-structures
       - secure-coding-practices
-      - software-design-modelling-and-diagramming-languages-eg-uml-c4-erm
+      - software-design-modelling-and-diagramming-languages
       - gang-of-four-design-patterns
       - devops-mindset
-      - internet-protocols-eg-dns-tcp-ip-http-tls-etc
+      - internet-protocols
       - monitoring-and-observability
       - containers-and-orchestration
   - name: "Competent"
@@ -73,7 +73,7 @@ skill_stages:
   - name: "Expert"
     topics:
       - systems-and-complexity-sciences
-      - knowledge-of-intellectual-property-laws-data-privacy-and-ethical-hacking-practices
+      - intellectual-property-laws-and-ethical-hacking
 ---
 
 # Core Software Engineer Archetype
