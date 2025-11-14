@@ -5,14 +5,7 @@ cross_references:
   - pair-programming
   - test-driven-development
   - continuous-integration
-  - refactoring
-  - simple-design
-  - collective-code-ownership
-  - coding-standards
-  - sustainable-pace
-  - whole-team
-  - small-releases
-  - on-site-customer
+  - clean-code-and-refactoring
 ---
 
 # Extreme Programming (XP) Practices
