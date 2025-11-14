@@ -55,7 +55,7 @@ def define_env(env):
                 if topics:
                     for topic in topics:
                         # Convert topic slug to link
-                        topic_link = f"[{topic_slug_to_title(topic)}](/topics/{topic}/)"
+                        topic_link = f"[{topic_slug_to_title(topic)}](../topics/{topic}.md)"
                         result.append(f"* {topic_link}")
                 else:
                     result.append("* No topics defined")
