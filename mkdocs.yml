@@ -1,5 +1,6 @@
 site_name: Zühlke Archetypes
-
+site_url: https://zuehlke.github.io/archetypes/
+use_directory_urls: true
 docs_dir: src
 
 site_dir: _site
