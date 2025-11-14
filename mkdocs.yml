@@ -7,6 +7,7 @@ site_dir: _site
 repo_url: https://github.com/Zuehlke/archetypes
 
 plugins:
+  - search
   - macros:
       module_name: archetype_macros
 
@@ -25,13 +26,13 @@ theme:
   favicon: assets/favicon.png
   icon:
     logo: material/alpha-a-box
-  font: 
+  font:
     text: Inter
   palette:
     - scheme: default
       primary: deep purple
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
 
     - scheme: slate

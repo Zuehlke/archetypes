@@ -14,58 +14,59 @@ from typing import Dict, Any
 def define_env(env):
     """
     Define macros for the MkDocs macros plugin.
-    
-    This function is called by mkdocs-macros-plugin to register
-    the available macros.
     """
     
     @env.macro
-    def render_skill_stages() -> str:
+    def render_skill_stages(show_topics: bool = True) -> str:
         """
-        Render skill stages from archetype frontmatter.
-        
-        Uses the current page's frontmatter to generate a formatted
-        list of skill stages with topic links.
-        
-        Returns:
-            str: Formatted markdown for skill stages
+        Render a clean roadmap with clickable expandable topic lists per stage.
         """
         try:
-            # Get frontmatter from current page
             frontmatter = env.page.meta
-            
-            # Validate frontmatter structure
             validate_archetype_schema(frontmatter)
-            
-            # Get skill stages from frontmatter
-            skill_stages = frontmatter.get('skill_stages', [])
-            
-            if not skill_stages:
-                return "<!-- No skill stages defined in frontmatter -->"
-            
-            # Generate markdown
-            result = []
-            for stage in skill_stages:
-                stage_name = stage.get('name', 'Unknown Stage')
-                topics = stage.get('topics', [])
-                
-                result.append(f"## {stage_name}")
-                result.append("")
-                
-                if topics:
-                    for topic in topics:
-                        # Convert topic slug to link
-                        topic_link = f"[{topic_slug_to_title(topic)}](/topics/{topic}/)"
-                        result.append(f"* {topic_link}")
-                else:
-                    result.append("* No topics defined")
-                
-                result.append("")  # Empty line between stages
-            
-            return "\n".join(result)
-            
+            stages = frontmatter.get("skill_stages", [])
+            if not stages:
+                return "<!-- No skill stages defined -->"
+
+            # --- Top-level roadmap ---
+            mermaid = ["```mermaid", "flowchart LR"]
+            prev = None
+            for stage in stages:
+                name = stage["name"]
+                node_id = name.replace(" ", "_").replace("-", "_")
+                slug = name.lower().replace(" ", "-")
+                count = len(stage.get("topics", []))
+                mermaid.append(f'  {node_id}["{name}<br/><font size=2>({count} topics)</font>"]')
+                mermaid.append(f'  click {node_id} "#stage-{slug}" "Show {name} topics"')
+                if prev:
+                    mermaid.append(f"  {prev} --> {node_id}")
+                prev = node_id
+            mermaid.append("```")
+
+            # --- Expandable sections ---
+            if not show_topics:
+                return "\n".join(mermaid)
+
+            details = []
+            for stage in stages:
+                name = stage["name"]
+                slug = name.lower().replace(" ", "-")
+                topics = stage.get("topics", [])
+                count = len(topics)
+
+                details.append(f'<details id="stage-{slug}"><summary><strong>{name}</strong> ({count} topics)</summary>')
+                details.append("<ul>")
+                for topic in topics:
+                    title = topic_slug_to_title(topic)
+                    details.append(f'<li><a href="/topics/{topic}/">{title}</a></li>')
+                details.append("</ul></details>")
+                details.append("")
+
+            return "\n".join(mermaid) + "\n\n" + "\n".join(details)
+
         except Exception as e:
-            return f"<!-- Error rendering skill stages: {str(e)} -->"
+            return f"<!-- Error rendering skill stages: {e} -->"
+
     
     @env.macro  
     def render_learning_resources() -> str:
