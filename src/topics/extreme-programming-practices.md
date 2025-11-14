@@ -1,3 +1,13 @@
+---
+title: Extreme Programming (XP) Practices
+learning_resources: []
+cross_references:
+  - pair-programming
+  - test-driven-development
+  - continuous-integration
+  - clean-code-and-refactoring
+---
+
 # Extreme Programming (XP) Practices
 
 Extreme Programming (XP) is an agile software development methodology emphasising technical excellence and customer satisfaction through reinforcing practices.
@@ -6,9 +16,8 @@ XP embraces change by using short development cycles, incremental planning, and 
 Rather than viewing change as a threat to project timelines, XP treats it as an inevitable reality and builds processes that harness change to create better products that meet customer needs.
 
 ## Practices
-
-* [Pair Programming](./pair-programming.md)
-* [Test-Driven Development](./test-driven-development.md)
+* Pair Programming
+* Test-Driven Development
 * Continuous Integration
 * Refactoring
 * Simple Design
@@ -18,3 +27,5 @@ Rather than viewing change as a threat to project timelines, XP treats it as an 
 * Whole Team
 * Small Releases
 * On-Site Customer
+
+{{ render_cross_references() }}
