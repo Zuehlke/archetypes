@@ -29,8 +29,7 @@ skill_stages:
       - os-shell-basics
       - ai-assisted-development-tools-and-workflows
       - data-structures
-      - security-basics
-      - owasp-top-10
+      - secure-coding-practices
       - software-design-modelling-and-diagramming-languages
       - gang-of-four-design-patterns
       - devops-mindset
@@ -71,15 +70,10 @@ skill_stages:
       - facilitating-agile
       - mentoring-and-coaching
       - effective-collaboration
-      - chaos-engineering
   - name: "Expert"
     topics:
       - systems-and-complexity-sciences
-      - site-reliability-engineering-for-developers
-      - ethical-and-responsible-tech
-      - gdpr-and-other-governance-requirements
       - intellectual-property-laws-and-ethical-hacking
-      - emerging-technologies-and-tech-trends
 ---
 
 # Core Software Engineer Archetype
