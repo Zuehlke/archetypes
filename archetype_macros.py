@@ -80,7 +80,7 @@ def define_env(env):
 
             for stage in stages:
                 name_raw = stage["name"]
-                name = escape(name_raw)
+                name = escape(name_raw, quote=True)
                 node_id = safe_slug(name_raw).replace("-", "_")
                 slug = safe_slug(name_raw)
                 count = len(stage.get("topics", []))
@@ -233,13 +233,20 @@ def validate_archetype_schema(frontmatter: Dict[str, Any]) -> None:
         with open(schema_dir / "archetype.schema.json", "r") as f:
             archetype_schema = json.load(f)
 
+        resolver = jsonschema.RefResolver(
+            base_uri=schema_dir.as_uri() + "/",
+            referrer=archetype_schema,
+            store={ "common.schema.json": common_schema }
+        )
+
         jsonschema.validate(
             instance=frontmatter,
-            schema=archetype_schema
+            schema=archetype_schema,
+            resolver=resolver
         )
 
     except FileNotFoundError:
-        pass
+        print("Warning: Schema file not found during archetype schema validation.")
     except jsonschema.ValidationError:
         raise
     except Exception as e:
@@ -256,13 +263,21 @@ def validate_topic_schema(frontmatter: Dict[str, Any]) -> None:
         with open(schema_dir / "topic.schema.json", "r") as f:
             topic_schema = json.load(f)
 
-        jsonschema.validate(
-            instance=frontmatter,
-            schema=topic_schema
+        resolver = jsonschema.RefResolver(
+            base_uri=schema_dir.as_uri() + "/",
+            referrer=topic_schema,
+            store={"common.schema.json": common_schema}
         )
 
-    except FileNotFoundError:
-        pass
+        jsonschema.validate(
+            instance=frontmatter,
+            schema=topic_schema,
+            resolver=resolver
+        )
+        
+
+    except FileNotFoundError as e:
+        print(f"Warning: Schema file not found: {str(e)}")
     except jsonschema.ValidationError:
         raise
     except Exception as e:
