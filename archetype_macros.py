@@ -47,7 +47,11 @@ def load_all_topics():
             continue
 
         frontmatter = yaml.safe_load(parts[1]) or {}
+
         frontmatter["_slug"] = md_file.stem
+        
+        frontmatter["_path"] = md_file.relative_to(TOPIC_ROOT)
+
         topics.append(frontmatter)
 
     return topics
@@ -233,7 +237,9 @@ def define_env(env):
                 for topic in items:
                     slug = topic["_slug"]
                     title = escape(pretty_title(topic))
-                    details.append(f'<li><a href="../topics/{slug}/">{title}</a></li>')
+                    topic_path = topic["_path"].with_suffix("")
+                    details.append(f'<li><a href="../topics/{topic_path}/">{title}</a></li>')
+
 
                 details.append("</ul></details>")
                 details.append("")
