@@ -85,9 +85,9 @@ def define_env(env):
                 slug = safe_slug(name_raw)
                 count = len(stage.get("topics", []))
 
-                escaped_name = name.replace('"', '&quot;')
-                mermaid.append(f'  {node_id}["{escaped_name}<br/><small>({count} topics)</small>"]')
-                mermaid.append(f'  click {node_id} "#stage-{slug}" "Show {escaped_name} topics"')
+                # name is already HTML-escaped, including quotes
+                mermaid.append(f'  {node_id}["{name}<br/><small>({count} topics)</small>"]')
+                mermaid.append(f'  click {node_id} "#stage-{slug}" "Show {name} topics"')
 
                 if prev:
                     mermaid.append(f"  {prev} --> {node_id}")
@@ -236,7 +236,7 @@ def validate_archetype_schema(frontmatter: Dict[str, Any]) -> None:
         resolver = jsonschema.RefResolver(
             base_uri=schema_dir.as_uri() + "/",
             referrer=archetype_schema,
-            store={ "common.schema.json": common_schema }
+            store={"common.schema.json": common_schema}
         )
 
         jsonschema.validate(
@@ -275,7 +275,6 @@ def validate_topic_schema(frontmatter: Dict[str, Any]) -> None:
             resolver=resolver
         )
         
-
     except FileNotFoundError as e:
         print(f"Warning: Schema file not found: {str(e)}")
     except jsonschema.ValidationError:
