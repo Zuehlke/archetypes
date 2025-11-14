@@ -31,10 +31,10 @@ skill_stages:
       - data-structures
       - security-basics
       - owasp-top-10
-      - software-design-modelling-and-diagramming-languages-eg-uml-c4-erm
+      - software-design-modelling-and-diagramming-languages
       - gang-of-four-design-patterns
       - devops-mindset
-      - internet-protocols-eg-dns-tcp-ip-http-tls-etc
+      - internet-protocols
       - monitoring-and-observability
       - containers-and-orchestration
   - name: "Competent"
@@ -78,7 +78,7 @@ skill_stages:
       - site-reliability-engineering-for-developers
       - ethical-and-responsible-tech
       - gdpr-and-other-governance-requirements
-      - knowledge-of-intellectual-property-laws-data-privacy-and-ethical-hacking-practices
+      - intellectual-property-laws-and-ethical-hacking
       - emerging-technologies-and-tech-trends
 ---
 
