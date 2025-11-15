@@ -155,12 +155,11 @@ def define_env(env):
     @env.macro
     def render_dynamic_skill_stages():
         """
-        Dynamic version of the pretty skill stage UI:
-        - Uses tags & archetype skill_stages mapping
-        - Builds Mermaid roadmap dynamically
-        - Renders expandable <details> sections
-        - Pretty titles (no dashes)
-        - Correct level order
+        Dynamic skill stage UI:
+        - Automatically assigns topics to levels via tags.levels
+        - Builds Mermaid level graph
+        - Creates expandable <details> lists per level
+        - Pretty titles, correct ordering
         """
         try:
             frontmatter = env.page.meta
@@ -170,29 +169,31 @@ def define_env(env):
             topics = load_all_topics()
             filtered = filter_topics_by_required_tags(topics, required_tags)
 
-            # Build mapping from archetype's defined levels
-            skill_stages = frontmatter.get("skill_stages", [])
-            level_map = build_level_mapping(skill_stages)
+            # Dreyfus levels (canonical order)
+            ORDER = ["novice", "advanced-beginner", "competent", "proficient", "expert"]
 
-            # Assign dynamic level to topics
+            # Assign levels directly from topic tags
             for topic in filtered:
-                slug = topic["_slug"]
-                topic["_level"] = level_map.get(slug, "unassigned")
+                levels = topic.get("tags", {}).get("levels", [])
+                topic["_levels"] = [lvl.lower().replace(" ", "-") for lvl in levels]
 
-            # Group topics by level
-            grouped = {}
+            # Group topics by level (multi-level support)
+            grouped = {lvl: [] for lvl in ORDER}
+            grouped["unassigned"] = []
+
             for topic in filtered:
-                lvl = topic["_level"]
-                grouped.setdefault(lvl, []).append(topic)
-
-            # Correct order for Dreyfus levels
-            ORDER = ["novice", "advanced-beginner", "competent", "proficient", "expert", "unassigned"]
+                if topic["_levels"]:
+                    for lvl in topic["_levels"]:
+                        if lvl in grouped:
+                            grouped[lvl].append(topic)
+                else:
+                    grouped["unassigned"].append(topic)
 
             # ---------- MERMAID DIAGRAM ----------
             mermaid = ["```mermaid", "flowchart LR"]
             prev = None
 
-            for level in ORDER:
+            for level in ORDER + ["unassigned"]:
                 items = grouped.get(level, [])
                 if not items:
                     continue
@@ -203,7 +204,6 @@ def define_env(env):
                 mermaid.append(
                     f'  {node_id}["{level_name}<br/><small>({len(items)} topics)</small>"]'
                 )
-
                 mermaid.append(
                     f'  click {node_id} "#stage-{safe_slug(level)}" "Show {level_name} topics"'
                 )
@@ -218,7 +218,7 @@ def define_env(env):
             # ---------- DETAILS SECTIONS ----------
             details = []
 
-            for level in ORDER:
+            for level in ORDER + ["unassigned"]:
                 items = grouped.get(level, [])
                 if not items:
                     continue
@@ -231,7 +231,7 @@ def define_env(env):
                 )
                 details.append("<ul>")
 
-                # Sort items alphabetically by pretty title
+                # sort items alphabetically
                 items = sorted(items, key=lambda t: pretty_title(t))
 
                 for topic in items:
@@ -240,7 +240,6 @@ def define_env(env):
                     topic_path = topic["_path"].with_suffix("")
                     details.append(f'<li><a href="../topics/{topic_path}/">{title}</a></li>')
 
-
                 details.append("</ul></details>")
                 details.append("")
 
@@ -248,6 +247,7 @@ def define_env(env):
 
         except Exception as e:
             return f"<!-- Error in render_dynamic_skill_stages: {e} -->"
+
     
     @env.macro  
     def render_learning_resources() -> str:
