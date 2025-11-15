@@ -10,6 +10,7 @@ repo_url: https://github.com/Zuehlke/archetypes
 plugins:
   - macros:
       module_name: archetype_macros
+  - search
 
 markdown_extensions:
   - pymdownx.superfences:
