@@ -1,0 +1,22 @@
+/* ------------------------------------------------
+   BASE STYLE for ALL nav icons (folder + page)
+-------------------------------------------------- */
+.md-nav__item .md-ellipsis::before {
+  margin-right: 0.2rem;
+  opacity: 0.85;
+  display: inline-block;
+}
+
+/* ------------------------------------------------
+   FOLDER ICON – category items (nested nav items)
+-------------------------------------------------- */
+.md-nav__item--nested > .md-nav__link .md-ellipsis::before {
+  content: "📁";
+}
+
+/* ------------------------------------------------
+   PAGE ICON – leaf nodes (actual topics)
+-------------------------------------------------- */
+.md-nav__item:not(.md-nav__item--nested) > a.md-nav__link .md-ellipsis::before {
+  content: "📄";
+}

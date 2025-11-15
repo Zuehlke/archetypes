@@ -24,6 +24,7 @@ markdown_extensions:
 
 theme:
   name: material
+  custom_dir: overrides
   favicon: assets/favicon.png
   icon:
     logo: material/alpha-a-box
@@ -41,3 +42,6 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+
+extra_css:
+  - assets/stylesheets/nav-icons.css
