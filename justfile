@@ -12,3 +12,6 @@ fmt:
 
 check-duplicates:
     uv run python3 scripts/check_duplicate_topics.py
+    
+add-frontmatter:
+    uv run python3 scripts/add_frontmatter_to_topics.py
