@@ -166,6 +166,36 @@ Your content here...
 
 Place new topics in `src/topics/your-topic-name.md`.
 
+#### Contributing to Archetypes
+
+Archetypes define career pathways by organizing topics into skill progression stages based on the Dreyfus model.
+
+**To add a topic to an existing archetype**, edit the archetype's frontmatter:
+
+```yaml
+---
+title: Core Software Engineer
+description: Foundation of technical excellence at Zühlke
+skill_stages:
+  - name: "Novice"
+    topics:
+      - version-control-systems
+      - developer-tooling-basics
+      # Add your topic slug here
+  
+  - name: "Advanced Beginner"
+    topics:
+      - test-driven-development
+      - pair-programming
+---
+```
+
+**Skill stages:** `Novice`, `Advanced Beginner`, `Competent`, `Proficient`, `Expert`
+
+**Note:** Topics must exist in `src/topics/` before being referenced in archetypes.
+
+Find archetypes in `src/archetypes/`.
+
 ### Working on Existing Issues
 
 You can also contribute by working on existing issues in the issue tracker.
