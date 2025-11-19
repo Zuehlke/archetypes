@@ -37,6 +37,17 @@ Please report unacceptable behaviour to the SWEX leadership team.
 
 ## How Can I Contribute?
 
+### Understanding the Data Structure
+
+Topics and archetypes use **YAML frontmatter** for structured data (learning resources, skill progressions, metadata). The frontmatter sits at the top of each markdown file and is validated against JSON schemas during build.
+
+**Key concepts:**
+* **Frontmatter**: YAML block at file top containing structured data
+* **Schemas**: Define valid structure (see `schemas/` directory)
+* **Validation**: Build fails if frontmatter doesn't match schema
+
+For full details, see [Data Architecture](docs/data-architecture.md) and [ADR-0001](docs/ADRs/ADR-0001.md).
+
 ### Reporting Bugs or Suggesting Enhancements
 
 If you find a bug in the website or have an idea for an enhancement (including new content areas), please check the [issue tracker](https://github.com/Zuehlke/archetypes/issues) to see if it has already been reported.
