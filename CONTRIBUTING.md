@@ -77,9 +77,16 @@ There are three main ways you can contribute content:
 3. **Archetypes** - Define or update career pathways that organize topics into skill progression stages
 
 **Before starting:**
-1. **Check existing content:** Ensure your proposed topic/archetype isn't already covered
-2. **Check the issue tracker:** Someone might already be working on similar content
-3. **Open an issue (optional but recommended):** Propose your idea for discussion with maintainers
+1. **Search existing content:** Browse `src/topics/` and `src/archetypes/` for similar concepts
+2. **Check for overlap:** 
+   - Would your contribution substantially duplicate existing content?
+   - Could you enhance existing content instead of creating new content?
+   - Does your proposed content have a distinct, well-defined scope?
+3. **Check the issue tracker:** Someone might already be working on similar content
+4. **Open an issue (RECOMMENDED for new topics/archetypes):** Propose your idea to:
+   - Discuss scope and boundaries
+   - Identify potential overlaps with existing content
+   - Get feedback on appropriate granularity
 
 #### Adding Learning Materials to Topics
 
@@ -112,6 +119,19 @@ learning_resources:
 **Optional fields:** `description`, `author`, `publisher`, `year`, `is_internal`, `embed_code`
 
 #### Creating a New Topic
+
+**Topic Scope Guidelines:**
+* **Single responsibility:** Each topic should cover one cohesive concept
+* **Appropriate granularity:** Not too broad (e.g., "Software Engineering") nor too narrow (e.g., "Git Merge Conflicts")
+* **Clear boundaries:** Topic scope should be well-defined and distinct from related topics
+* **Use cross-references:** Link related topics rather than duplicating content
+
+**Examples:**
+* ✅ Good: "Version Control Systems" (clear scope, covers Git, SVN concepts)
+* ✅ Good: "Test Driven Development" (specific practice)
+* ❌ Too broad: "Software Development" (covers everything)
+* ❌ Too narrow: "How to Write a For Loop in Python" (too specific)
+* ❌ Overlapping: Creating both "Git Basics" and "Version Control Systems" when they cover similar ground
 
 **Filename requirements:**
 * Use kebab-case: `your-topic-name.md` (lowercase, hyphens only)
