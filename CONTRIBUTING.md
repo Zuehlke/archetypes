@@ -64,21 +64,107 @@ When suggesting an enhancement:
 * Describe your proposed solution.
 * Explain the benefits this enhancement would bring to users.
 
-### Contributing Content (Learning Materials)
+### Contributing Content
+We are excited to receive contributions of learning materials, new topics, and archetypes from the community!
+There are three main ways you can contribute content:
 
-We are excited to receive contributions in the form of learning materials for various skills. This could include:
-* Tutorials or how-to guides
-* Explanations of concepts
-* Collections of useful resources
-* Exercises or quizzes
-* Case studies
+1. **Learning Materials** - Add resources to existing topics (books, tutorials, courses, etc.)
+2. **Topics** - Create new learning areas (e.g., "Version Control Systems", "Test Driven Development")
+3. **Archetypes** - Define or update career pathways that organize topics into skill progression stages
 
-Before starting to write new content, it's a good idea to:
-1.  **Check existing content:** Ensure your proposed topic isn't already well-covered.
-2.  **Check the issue tracker:** Someone might have already suggested or started working on a similar topic.
-3.  **Open an issue (optional but recommended):** Propose your content idea by opening an issue. 
-This allows for discussion with maintainers and other contributors, preventing duplicated effort and ensuring your idea aligns with the project's goals. 
-Tag it as `content proposal` or similar.
+**Before starting:**
+1. **Check existing content:** Ensure your proposed topic/archetype isn't already covered
+2. **Check the issue tracker:** Someone might already be working on similar content
+3. **Open an issue (optional but recommended):** Propose your idea for discussion with maintainers
+
+#### Adding Learning Materials to Topics
+
+The most common contribution is adding learning resources to existing topics. Simply edit the topic's frontmatter:
+
+```yaml
+---
+title: Version Control Systems
+learning_resources:
+  - type: "external_link"
+    title: "Learn Git Branching"
+    url: "https://learngitbranching.js.org/"
+    description: "Interactive tutorial for learning Git"
+  
+  # Add your new resource here
+  - type: "book"
+    title: "Pro Git"
+    author: "Scott Chacon"
+    url: "https://git-scm.com/book"
+    publisher: "Apress"
+    year: 2014
+    description: "Comprehensive guide to Git"
+---
+```
+
+**Resource types:** `external_link`, `book`, `course`, `video`, `pdf`, `talk`, `presentation`
+
+**Required fields:** `type`, `title`, `url`
+
+**Optional fields:** `description`, `author`, `publisher`, `year`, `is_internal`, `embed_code`
+
+#### Creating a New Topic
+
+**Filename requirements:**
+* Use kebab-case: `your-topic-name.md` (lowercase, hyphens only)
+* Filename becomes the URL slug
+* Pattern: `^[a-z0-9]+(-[a-z0-9]+)*$` (no underscores, special chars, or uppercase)
+
+**Minimal frontmatter template:**
+```yaml
+---
+title: Your Topic Title
+---
+
+# Your Topic Title
+
+Your topic content here...
+```
+
+**With learning resources:**
+```yaml
+---
+title: Version Control Systems
+learning_resources:
+  - type: "external_link"
+    title: "Learn Git Branching"
+    url: "https://learngitbranching.js.org/"
+    description: "Interactive tutorial for learning Git"
+  
+  - type: "book"
+    title: "Pro Git"
+    author: "Scott Chacon"
+    url: "https://git-scm.com/book"
+    publisher: "Apress"
+    year: 2014
+  
+  - type: "course"
+    title: "Internal Git Workshop"
+    url: "https://internal.zuhlke.com/git"
+    is_internal: true
+    description: "Advanced workshop (Zühlke only)"
+
+cross_references:
+  - pair-programming
+  - continuous-integration
+---
+
+# Version Control Systems
+
+Your content here...
+
+{{ render_learning_resources() }}
+```
+
+**Resource types:** `external_link`, `book`, `course`, `video`, `pdf`, `talk`, `presentation`
+
+**Required fields:** `type`, `title`, `url`
+
+Place new topics in `src/topics/your-topic-name.md`.
 
 ### Working on Existing Issues
 
