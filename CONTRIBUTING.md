@@ -276,8 +276,13 @@ To ensure consistency and quality, please adhere to the following guidelines whe
 
 ### Formatting
 
-* **File Format:** Content should typically be submitted in Markdown (`.md`) format.
-* **File Naming:** Use lowercase, hyphenated file names (e.g., `my-new-skill-tutorial.md`).
+* **File Format:** Content should be submitted in Markdown (`.md`) format with YAML frontmatter.
+* **Frontmatter Requirements:**
+    * Topics require at minimum a `title` field
+    * Archetypes require `title`, `description`, and `skill_stages`
+    * See examples in [Creating a New Topic](#creating-a-new-topic) and [Contributing to Archetypes](#contributing-to-archetypes)
+    * Frontmatter is validated against JSON schemas in `schemas/` directory
+* **File Naming:** Use kebab-case file names (e.g., `test-driven-development.md`).
 * **Directory Structure:** Place new content files in the appropriate directory (e.g., `src/topics/your-topic.md`). Check existing structure or ask if unsure.
 * **Images/Assets:** If your content includes images or other assets:
     * Place them in a relevant assets folder (e.g., `assets/your-topic/your-image.png`).
