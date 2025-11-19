@@ -223,6 +223,26 @@ just fmt
 just build
 ```
 
+**What gets validated:**
+* **Frontmatter schema** - YAML structure must match schemas in `schemas/` directory
+* **Broken links** - MkDocs strict mode catches missing pages and broken cross-references
+* **Markdown linting** - Ensures consistent formatting
+
+**Common validation errors:**
+
+*Schema validation:*
+```
+ValidationError: 'title' is a required property
+File: src/topics/my-new-topic.md
+```
+Fix: Add missing required field to frontmatter
+
+*Link validation:*
+```
+WARNING - Doc file contains a link to 'topics/non-existent.md', but target not found
+```
+Fix: Create the referenced topic or remove the broken reference
+
 This will format your code and rebuild the static website to ensure everything is up-to-date.
 
 You can also run the local development server to visually inspect your changes:
