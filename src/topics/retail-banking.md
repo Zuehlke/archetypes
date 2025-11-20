@@ -1,17 +1,31 @@
+---
+title: Retail Banking
+description: >
+  Retail banking (consumer banking) provides day-to-day financial products such
+  as deposits, payments, and personal lending to individuals and households.
+learning_resources:
+  - type: "external_link"
+    title: "Retail Banking: What It Is, Different Types, Common Services"
+    url: "https://www.investopedia.com/terms/r/retailbanking.asp"
+  - type: "external_link"
+    title: "What Is a Deposit? Definition, Meaning, Types, and Example"
+    url: "https://www.investopedia.com/terms/d/deposit.asp"
+  - type: "external_link"
+    title: "What Is a Checking Account? Here's Everything You Need To Know"
+    url: "https://www.investopedia.com/terms/c/checkingaccount.asp"
+  - type: "external_link"
+    title: "Debit Card Definition, Fees, and How They Work"
+    url: "https://www.investopedia.com/terms/d/debitcard.asp"
+cross_references:
+  - banking-basics
+  - retail-loans
+  - corporate-banking
+---
+
 # Retail Banking
 
-Retail banking, also known as consumer banking, refers to the suite of financial services and products that banks provide to individual consumers rather than businesses or corporations. Retail banks focus on meeting the everyday financial needs of individuals and households.
+{{ render_description() }}
 
-## Learning Resources
+{{ render_learning_resources() }}
 
-* [Retail Banking: What It Is, Different Types, Common
-    Services](https://www.investopedia.com/terms/r/retailbanking.asp)
-
-* [What Is a Deposit? Definition, Meaning, Types, and
-    Example](https://www.investopedia.com/terms/d/deposit.asp)
-
-* [What Is a Checking Account? Here's Everything You Need To
-    Know](https://www.investopedia.com/terms/c/checkingaccount.asp)
-
-* [Debit Card Definition, Fees, and How They
-    Work](https://www.investopedia.com/terms/d/debitcard.asp)
+{{ render_cross_references() }}

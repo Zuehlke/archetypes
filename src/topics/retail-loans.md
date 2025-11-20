@@ -1,29 +1,43 @@
+---
+title: Retail Loans
+description: >
+  Retail loans provide individuals with credit for personal needs such as homes,
+  cars, education, and revolving purchases, with terms driven by credit risk and
+  collateral.
+learning_resources:
+  - type: "external_link"
+    title: "Personal Loan: Definition, Types, and How to Get One"
+    url: "https://www.investopedia.com/personal-loan-5076027"
+  - type: "external_link"
+    title: "Creditworthiness: How to Check and Improve It"
+    url: "https://www.investopedia.com/terms/c/credit-worthiness.asp"
+  - type: "external_link"
+    title: "Credit Rating vs. Credit Score: What's the Difference?"
+    url: "https://www.investopedia.com/ask/answers/110614/whats-difference-between-credit-rating-and-credit-score.asp"
+  - type: "external_link"
+    title: "Collateral - Definition and Examples"
+    url: "https://www.investopedia.com/terms/c/collateral.asp"
+  - type: "external_link"
+    title: "Credit Card: What It Is, How It Works, and How to Get One"
+    url: "https://www.investopedia.com/terms/c/creditcard.asp"
+  - type: "external_link"
+    title: "Conventional Mortgage or Loan"
+    url: "https://www.investopedia.com/terms/c/conventionalmortgage.asp"
+  - type: "external_link"
+    title: "Mortgage Interest: What It Is, How It Works"
+    url: "https://www.investopedia.com/terms/m/mortgageinterest.asp"
+  - type: "external_link"
+    title: "Mortgage Lenders and Mortgage Servicers"
+    url: "https://www.investopedia.com/ask/answers/100314/whats-difference-between-mortgage-lender-and-mortgage-servicer.asp"
+cross_references:
+  - retail-banking
+  - banking-basics
+---
+
 # Retail Loans
 
-Retail loans are a category of loans provided by financial institutions to individual consumers for personal use. These loans are designed to help individuals finance various needs, such as purchasing a home, buying a car, funding education, or covering other personal expenses. Retail loans typically have fixed or variable interest rates and repayment terms that vary based on the type of loan and the borrower's creditworthiness.
+{{ render_description() }}
 
-## Learning Resources
+{{ render_learning_resources() }}
 
-* [Personal Loan: Definition, Types, and How to Get
-    One](https://www.investopedia.com/personal-loan-5076027)
-
-* [Creditworthiness: How to Check and Improve
-    It](https://www.investopedia.com/terms/c/credit-worthiness.asp)
-
-* [Credit Rating vs. Credit Score: What's the
-    Difference?](https://www.investopedia.com/ask/answers/110614/whats-difference-between-credit-rating-and-credit-score.asp)
-
-* [Collateral - Definition and
-    Examples](https://www.investopedia.com/terms/c/collateral.asp)
-
-* [Credit Card: What It Is, How It Works, and How to Get
-    One](https://www.investopedia.com/terms/c/creditcard.asp)
-
-* [Conventional Mortgage or
-    Loan](https://www.investopedia.com/terms/c/conventionalmortgage.asp)
-
-* [Mortgage Interest: What It Is, How It
-    Works](https://www.investopedia.com/terms/m/mortgageinterest.asp)
-
-* [Mortgage Lenders and Mortgage
-    Servicers](https://www.investopedia.com/ask/answers/100314/whats-difference-between-mortgage-lender-and-mortgage-servicer.asp)
+{{ render_cross_references() }}

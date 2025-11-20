@@ -1,20 +1,29 @@
+---
+title: Finance Basics
+description: >
+  Finance covers the management of money, investments, and risk so that
+  individuals and institutions can achieve economic goals and make informed
+  decisions about allocating resources.
+learning_resources:
+  - type: "external_link"
+    title: "Types of Finance and Financial Services"
+    url: "https://www.investopedia.com/ask/answers/what-is-finance/"
+  - type: "external_link"
+    title: "Importance and Components of the Financial Services Sector"
+    url: "https://www.investopedia.com/ask/answers/030315/what-financial-services-sector.asp"
+  - type: "external_link"
+    title: "Different Types of Financial Institutions"
+    url: "https://www.investopedia.com/ask/answers/061615/what-are-major-categories-financial-institutions-and-what-are-their-primary-roles.asp"
+  - type: "external_link"
+    title: "What Is Risk Management in Finance, and Why Is It Important?"
+    url: "https://www.investopedia.com/terms/r/riskmanagement.asp"
+  - type: "external_link"
+    title: "Financial Technology (Fintech): Its Uses and Impact on Our Lives"
+    url: "https://www.investopedia.com/terms/f/fintech.asp"
+---
+
 # Finance Basics
 
-Finance is the management of money, investments, and other financial instruments to achieve specific economic goals. It encompasses a wide range of activities, including budgeting, investing, lending, borrowing, and risk management. Finance plays a crucial role in both personal and business contexts, influencing decision-making and resource allocation.
+{{ render_description() }}
 
-## Learning Resources
-
-1. [Types of Finance and Financial
-    Services](https://www.investopedia.com/ask/answers/what-is-finance/)
-
-2. [Importance and Components of the Financial Services
-    Sector](https://www.investopedia.com/ask/answers/030315/what-financial-services-sector.asp)
-
-3. [Different Types of Financial
-    Institutions](https://www.investopedia.com/ask/answers/061615/what-are-major-categories-financial-institutions-and-what-are-their-primary-roles.asp)
-
-4. [What Is Risk Management in Finance, and Why Is It
-    Important?](https://www.investopedia.com/terms/r/riskmanagement.asp)
-
-5. [Financial Technology (Fintech): Its Uses and Impact on Our
-    Lives](https://www.investopedia.com/terms/f/fintech.asp)
+{{ render_learning_resources() }}

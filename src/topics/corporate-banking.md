@@ -1,11 +1,26 @@
+---
+title: Corporate Banking
+description: >
+  Corporate banking (commercial banking) delivers credit, treasury, and advisory
+  services tailored to the complex needs of companies, governments, and large
+  institutions.
+learning_resources:
+  - type: "external_link"
+    title: "Retail Banking vs. Corporate Banking Explained"
+    url: "https://www.investopedia.com/articles/general/071213/retail-banking-vs-commercial-banking.asp"
+  - type: "external_link"
+    title: "Equity Meaning: How It Works and How to Calculate It"
+    url: "https://www.investopedia.com/terms/e/equity.asp"
+cross_references:
+  - banking-basics
+  - retail-banking
+  - investment-banking
+---
+
 # Corporate Banking
 
-Corporate banking, also known as business banking, refers to the suite of financial services and products that banks provide to corporations, businesses, and government entities. Unlike retail banking, which focuses on individual consumers, corporate banking caters to the complex financial needs of larger organizations.
+{{ render_description() }}
 
-## Learning Resources
+{{ render_learning_resources() }}
 
-* [Retail Banking vs. Corporate Banking
-    Explained](https://www.investopedia.com/articles/general/071213/retail-banking-vs-commercial-banking.asp)
-
-* [Equity Meaning: How It Works and How to Calculate
-    It](https://www.investopedia.com/terms/e/equity.asp)
+{{ render_cross_references() }}

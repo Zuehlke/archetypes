@@ -1,14 +1,27 @@
+---
+title: Banking Basics
+description: >
+  Banking institutions accept deposits, extend credit, facilitate payments,
+  and connect savers with borrowers to keep capital flowing through the economy.
+learning_resources:
+  - type: "external_link"
+    title: "How Banking Works, Types of Banks, and How To Choose the Best Bank for You"
+    url: "https://www.investopedia.com/terms/b/bank.asp"
+  - type: "external_link"
+    title: "Financial Instruments Explained: Types and Asset Classes"
+    url: "https://www.investopedia.com/terms/f/financialinstrument.asp"
+  - type: "external_link"
+    title: "Capital: Definition, How It's Used, Structure, and Types in Business"
+    url: "https://www.investopedia.com/terms/c/capital.asp"
+cross_references:
+  - retail-banking
+  - corporate-banking
+---
+
 # Banking Basics
 
-Banking refers to the industry and services provided by financial institutions that accept deposits, offer loans, and facilitate various financial transactions for individuals, businesses, and governments. Banks play a crucial role in the economy by acting as intermediaries between savers and borrowers, managing payment systems, and providing financial products and services.
+{{ render_description() }}
 
-## Learning Resources
+{{ render_learning_resources() }}
 
-* [How Banking Works, Types of Banks, and How To Choose the Best Bank
-    for You](https://www.investopedia.com/terms/b/bank.asp)
-
-* [Financial Instruments Explained: Types and Asset
-    Classes](https://www.investopedia.com/terms/f/financialinstrument.asp)
-
-* [Capital: Definition, How It's Used, Structure, and Types in
-    Business](https://www.investopedia.com/terms/c/capital.asp)
+{{ render_cross_references() }}

@@ -159,6 +159,25 @@ def define_env(env):
         except Exception as e:
             return f"<!-- Error rendering cross-references: {str(e)} -->"
 
+    @env.macro
+    def render_description() -> str:
+        """
+        Render the current page description from frontmatter.
+
+        Returns:
+            str: Description paragraph or HTML comment if missing.
+        """
+        try:
+            description = env.page.meta.get('description', '').strip()
+
+            if not description:
+                return "<!-- No description defined in frontmatter -->"
+
+            return description
+
+        except Exception as e:
+            return f"<!-- Error rendering description: {str(e)} -->"
+
 
 def topic_slug_to_title(slug: str) -> str:
     """

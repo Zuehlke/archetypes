@@ -1,3 +1,5 @@
+set shell := ["cmd.exe", "/d", "/c"]
+
 build:
     uv run mkdocs build --clean --strict
 
