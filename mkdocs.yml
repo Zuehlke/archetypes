@@ -1,10 +1,15 @@
 site_name: Zühlke Archetypes
-
+site_url: https://zuehlke.github.io/archetypes/
+use_directory_urls: true
 docs_dir: src
 
 site_dir: _site
 
 repo_url: https://github.com/Zuehlke/archetypes
+
+plugins:
+  - macros:
+      module_name: archetype_macros
 
 markdown_extensions:
   - pymdownx.superfences:
@@ -21,13 +26,13 @@ theme:
   favicon: assets/favicon.png
   icon:
     logo: material/alpha-a-box
-  font: 
+  font:
     text: Inter
   palette:
     - scheme: default
       primary: deep purple
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
 
     - scheme: slate
