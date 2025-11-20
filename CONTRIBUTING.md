@@ -11,13 +11,17 @@ Please read it carefully to ensure a smooth and effective contribution process.
 
 * [Code of Conduct](#code-of-conduct)
 * [How Can I Contribute?](#how-can-i-contribute)
+    * [Understanding the Data Structure](#understanding-the-data-structure)
     * [Reporting Bugs or Suggesting Enhancements](#reporting-bugs-or-suggesting-enhancements)
-    * [Contributing Content (Learning Materials)](#contributing-content-learning-materials)
+    * [Contributing Content](#contributing-content)
+        * [Adding Learning Materials to Topics](#adding-learning-materials-to-topics)
+        * [Creating a New Topic](#creating-a-new-topic)
+        * [Contributing to Archetypes](#contributing-to-archetypes)
     * [Working on Existing Issues](#working-on-existing-issues)
-* [Setting Up Your Development Environment](#setting-up-your-development-environment) (Optional - if applicable)
 * [Making Changes & Creating Pull Requests](#making-changes--creating-pull-requests)
     * [Forking the Repository](#forking-the-repository)
     * [Creating a Branch](#creating-a-branch)
+    * [Validating Your Changes](#validating-your-changes)
     * [Committing Your Changes](#committing-your-changes)
     * [Writing Good Commit Messages](#writing-good-commit-messages)
     * [Submitting a Pull Request](#submitting-a-pull-request)
@@ -37,6 +41,17 @@ Please report unacceptable behaviour to the SWEX leadership team.
 
 ## How Can I Contribute?
 
+### Understanding the Data Structure
+
+Topics and archetypes use **YAML frontmatter** for structured data (learning resources, skill progressions, metadata). The frontmatter sits at the top of each markdown file and is validated against JSON schemas during build.
+
+**Key concepts:**
+* **Frontmatter**: YAML block at file top containing structured data
+* **Schemas**: Define valid structure (see `schemas/` directory)
+* **Validation**: Build fails if frontmatter doesn't match schema
+
+For full details, see [Data Architecture](docs/data-architecture.md) and [ADR-0001](docs/ADRs/ADR-0001.md).
+
 ### Reporting Bugs or Suggesting Enhancements
 
 If you find a bug in the website or have an idea for an enhancement (including new content areas), please check the [issue tracker](https://github.com/Zuehlke/archetypes/issues) to see if it has already been reported.
@@ -53,21 +68,157 @@ When suggesting an enhancement:
 * Describe your proposed solution.
 * Explain the benefits this enhancement would bring to users.
 
-### Contributing Content (Learning Materials)
+### Contributing Content
+We are excited to receive contributions of learning materials, new topics, and archetypes from the community!
+There are three main ways you can contribute content:
 
-We are excited to receive contributions in the form of learning materials for various skills. This could include:
-* Tutorials or how-to guides
-* Explanations of concepts
-* Collections of useful resources
-* Exercises or quizzes
-* Case studies
+1. **Learning Materials** - Add resources to existing topics (books, tutorials, courses, etc.)
+2. **Topics** - Create new learning areas (e.g., "Version Control Systems", "Test Driven Development")
+3. **Archetypes** - Define or update career pathways that organize topics into skill progression stages
 
-Before starting to write new content, it's a good idea to:
-1.  **Check existing content:** Ensure your proposed topic isn't already well-covered.
-2.  **Check the issue tracker:** Someone might have already suggested or started working on a similar topic.
-3.  **Open an issue (optional but recommended):** Propose your content idea by opening an issue. 
-This allows for discussion with maintainers and other contributors, preventing duplicated effort and ensuring your idea aligns with the project's goals. 
-Tag it as `content proposal` or similar.
+**Before starting:**
+1. **Search existing content:** Browse `src/topics/` and `src/archetypes/` for similar concepts
+2. **Check for overlap:** 
+   - Would your contribution substantially duplicate existing content?
+   - Could you enhance existing content instead of creating new content?
+   - Does your proposed content have a distinct, well-defined scope?
+3. **Check the issue tracker:** Someone might already be working on similar content
+4. **Open an issue (RECOMMENDED for new topics/archetypes):** Propose your idea to:
+   - Discuss scope and boundaries
+   - Identify potential overlaps with existing content
+   - Get feedback on appropriate granularity
+
+#### Adding Learning Materials to Topics
+
+The most common contribution is adding learning resources to existing topics. Simply edit the topic's frontmatter:
+
+```yaml
+---
+title: Version Control Systems
+learning_resources:
+  - type: "external_link"
+    title: "Learn Git Branching"
+    url: "https://learngitbranching.js.org/"
+    description: "Interactive tutorial for learning Git"
+  
+  # Add your new resource here
+  - type: "book"
+    title: "Pro Git"
+    author: "Scott Chacon"
+    url: "https://git-scm.com/book"
+    publisher: "Apress"
+    year: 2014
+    description: "Comprehensive guide to Git"
+---
+```
+
+**Resource types:** `external_link`, `book`, `course`, `video`, `pdf`, `talk`, `presentation`
+
+**Required fields:** `type`, `title`, `url`
+
+**Optional fields:** `description`, `author`, `publisher`, `year`, `is_internal`, `embed_code`
+
+#### Creating a New Topic
+
+**Topic Scope Guidelines:**
+* **Single responsibility:** Each topic should cover one cohesive concept
+* **Appropriate granularity:** Not too broad (e.g., "Software Engineering") nor too narrow (e.g., "Git Merge Conflicts")
+* **Clear boundaries:** Topic scope should be well-defined and distinct from related topics
+* **Use cross-references:** Link related topics rather than duplicating content
+
+**Examples:**
+* ✅ Good: "Version Control Systems" (clear scope, covers Git, SVN concepts)
+* ✅ Good: "Test Driven Development" (specific practice)
+* ❌ Too broad: "Software Development" (covers everything)
+* ❌ Too narrow: "How to Write a For Loop in Python" (too specific)
+* ❌ Overlapping: Creating both "Git Basics" and "Version Control Systems" when they cover similar ground
+
+**Filename requirements:**
+* Use kebab-case: `your-topic-name.md` (lowercase, hyphens only)
+* Filename becomes the URL slug
+* Pattern: `^[a-z0-9]+(-[a-z0-9]+)*$` (no underscores, special chars, or uppercase)
+
+**Minimal frontmatter template:**
+```yaml
+---
+title: Your Topic Title
+---
+
+# Your Topic Title
+
+Your topic content here...
+```
+
+**With learning resources:**
+```yaml
+---
+title: Version Control Systems
+learning_resources:
+  - type: "external_link"
+    title: "Learn Git Branching"
+    url: "https://learngitbranching.js.org/"
+    description: "Interactive tutorial for learning Git"
+  
+  - type: "book"
+    title: "Pro Git"
+    author: "Scott Chacon"
+    url: "https://git-scm.com/book"
+    publisher: "Apress"
+    year: 2014
+  
+  - type: "course"
+    title: "Internal Git Workshop"
+    url: "https://internal.zuhlke.com/git"
+    is_internal: true
+    description: "Advanced workshop (Zühlke only)"
+
+cross_references:
+  - pair-programming
+  - continuous-integration
+---
+
+# Version Control Systems
+
+Your content here...
+
+{{ render_learning_resources() }}
+```
+
+**Resource types:** `external_link`, `book`, `course`, `video`, `pdf`, `talk`, `presentation`
+
+**Required fields:** `type`, `title`, `url`
+
+Place new topics in `src/topics/your-topic-name.md`.
+
+#### Contributing to Archetypes
+
+Archetypes define career pathways by organizing topics into skill progression stages based on the Dreyfus model.
+
+**To add a topic to an existing archetype**, edit the archetype's frontmatter:
+
+```yaml
+---
+title: Core Software Engineer
+description: Foundation of technical excellence at Zühlke
+skill_stages:
+  - name: "Novice"
+    topics:
+      - version-control-systems
+      - developer-tooling-basics
+      # Add your topic slug here
+  
+  - name: "Advanced Beginner"
+    topics:
+      - test-driven-development
+      - pair-programming
+---
+```
+
+**Skill stages:** `Novice`, `Advanced Beginner`, `Competent`, `Proficient`, `Expert`
+
+**Note:** Topics must exist in `src/topics/` before being referenced in archetypes.
+
+Find archetypes in `src/archetypes/`.
 
 ### Working on Existing Issues
 
@@ -95,6 +246,26 @@ Before committing your changes, ensure they are valid and do not break the build
 just fmt
 just build
 ```
+
+**What gets validated:**
+* **Frontmatter schema** - YAML structure must match schemas in `schemas/` directory
+* **Broken links** - MkDocs strict mode catches missing pages and broken cross-references
+* **Markdown linting** - Ensures consistent formatting
+
+**Common validation errors:**
+
+*Schema validation:*
+```
+ValidationError: 'title' is a required property
+File: src/topics/my-new-topic.md
+```
+Fix: Add missing required field to frontmatter
+
+*Link validation:*
+```
+WARNING - Doc file contains a link to 'topics/non-existent.md', but target not found
+```
+Fix: Create the referenced topic or remove the broken reference
 
 This will format your code and rebuild the static website to ensure everything is up-to-date.
 
@@ -149,8 +320,13 @@ To ensure consistency and quality, please adhere to the following guidelines whe
 
 ### Formatting
 
-* **File Format:** Content should typically be submitted in Markdown (`.md`) format.
-* **File Naming:** Use lowercase, hyphenated file names (e.g., `my-new-skill-tutorial.md`).
+* **File Format:** Content should be submitted in Markdown (`.md`) format with YAML frontmatter.
+* **Frontmatter Requirements:**
+    * Topics require at minimum a `title` field
+    * Archetypes require `title`, `description`, and `skill_stages`
+    * See examples in [Creating a New Topic](#creating-a-new-topic) and [Contributing to Archetypes](#contributing-to-archetypes)
+    * Frontmatter is validated against JSON schemas in `schemas/` directory
+* **File Naming:** Use kebab-case file names (e.g., `test-driven-development.md`).
 * **Directory Structure:** Place new content files in the appropriate directory (e.g., `src/topics/your-topic.md`). Check existing structure or ask if unsure.
 * **Images/Assets:** If your content includes images or other assets:
     * Place them in a relevant assets folder (e.g., `assets/your-topic/your-image.png`).
