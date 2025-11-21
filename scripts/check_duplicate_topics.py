@@ -12,6 +12,7 @@ from pathlib import Path
 import yaml
 import difflib
 import re
+import sys
 
 TOPIC_ROOT = Path(__file__).parent.parent / "src" / "topics"
 
@@ -64,20 +65,26 @@ def load_all_topics():
 
     return topics
 
-
+# Known acronyms to remove from topic titles (as standalone words)
+ACRONYMS_TO_REMOVE = {"xp", "tdd"}
 def normalize_title(t: str):
-    """Convert title to comparable simplified form."""
-    if not t:
-        return ""
 
-    t = t.lower().strip()
-    t = t.replace("(", "").replace(")", "")
-    t = t.replace("xp", "").replace("tdd", "")
-    t = t.replace("-", " ")
-    return " ".join(t.split())
-
-
-def main():
+        """Convert title to comparable simplified form.
+        Removes known acronyms (as standalone words) for duplicate detection.
+        Expand ACRONYMS_TO_REMOVE as needed.
+        """
+        
+        if not t:
+            return ""
+        t = t.lower().strip()
+        t = t.replace("(", "").replace(")", "")
+        t = t.replace("-", " ")
+        # Remove known acronyms as standalone words
+        words = t.split()
+        words = [w for w in words if w not in ACRONYMS_TO_REMOVE]
+        return " ".join(words)
+        
+def main() -> None:
     print(f"🔍 Checking for duplicate topics in: {TOPIC_ROOT}")
 
     topics = load_all_topics()
@@ -100,32 +107,41 @@ def main():
             seen_slugs[slug] = filename
 
         # Duplicate title
-        if norm_title in seen_titles:
-            errors.append(
-                f"❌ Duplicate title '{title}': {filename} and {seen_titles[norm_title]}"
-            )
-        else:
-            seen_titles[norm_title] = filename
-
-    # Fuzzy matching
-    titles = list(seen_titles.keys())
-    for i in range(len(titles)):
-        for j in range(i + 1, len(titles)):
-            a, b = titles[i], titles[j]
-            ratio = difflib.SequenceMatcher(None, a, b).ratio()
-            if ratio > 0.80:
+        if norm_title:  # Only check non-empty normalized titles
+            if norm_title in seen_titles:
                 errors.append(
-                    f"⚠️ Possible similar topics:\n"
-                    f"   - '{a}'\n"
-                    f"   - '{b}'\n"
-                    f"     similarity={ratio:.2f}"
+                    f"❌ Duplicate title '{title}': {filename} and {seen_titles[norm_title]}"
                 )
+            else:
+                seen_titles[norm_title] = filename
+
+        # Build mapping from normalized to original titles
+        norm_to_original = {}
+        for t in topics:
+            norm_title = normalize_title(t["title"])
+            if norm_title not in norm_to_original:  # Take first occurrence
+                norm_to_original[norm_title] = t["title"]
+
+        # Fuzzy matching
+        titles = list(seen_titles.keys())
+        for i in range(len(titles)):
+            for j in range(i + 1, len(titles)):
+                a, b = titles[i], titles[j]
+                ratio = difflib.SequenceMatcher(None, a, b).ratio()
+                if ratio > 0.80:
+                    errors.append(
+                        f"⚠️ Possible similar topics:\n"
+                        f"   - '{norm_to_original[a]}'\n"
+                        f"   - '{norm_to_original[b]}'\n"
+                        f"     similarity={ratio:.2f}"
+                    )
 
     print("")
 
     if errors:
         print("\n".join(errors))
         print(f"\n❌ Found {len(errors)} potential duplicate issues.")
+        sys.exit(1)
     else:
         print("✅ No duplicates detected!")
 
