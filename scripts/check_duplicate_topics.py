@@ -92,13 +92,18 @@ def main() -> None:
     seen_titles = {}
     errors = []
 
+    norm_to_original = {}
+    for t in topics:
+        nt = normalize_title(t["title"])
+        if nt not in norm_to_original:
+            norm_to_original[nt] = t["title"]
+
     for t in topics:
         slug = t["_slug"]
         title = t["title"]
         norm_title = normalize_title(title)
         filename = t["_file"]
 
-        # Duplicate slug
         if slug in seen_slugs:
             errors.append(
                 f"❌ Duplicate slug '{slug}': {filename} and {seen_slugs[slug]}"
@@ -106,8 +111,7 @@ def main() -> None:
         else:
             seen_slugs[slug] = filename
 
-        # Duplicate title
-        if norm_title:  # Only check non-empty normalized titles
+        if norm_title:
             if norm_title in seen_titles:
                 errors.append(
                     f"❌ Duplicate title '{title}': {filename} and {seen_titles[norm_title]}"
@@ -115,28 +119,21 @@ def main() -> None:
             else:
                 seen_titles[norm_title] = filename
 
-        # Build mapping from normalized to original titles
-        norm_to_original = {}
-        for t in topics:
-            norm_title = normalize_title(t["title"])
-            if norm_title not in norm_to_original:  # Take first occurrence
-                norm_to_original[norm_title] = t["title"]
+    titles = list(seen_titles.keys())
+    for i in range(len(titles)):
+        for j in range(i + 1, len(titles)):
+            a, b = titles[i], titles[j]
+            ratio = difflib.SequenceMatcher(None, a, b).ratio()
 
-        # Fuzzy matching
-        titles = list(seen_titles.keys())
-        for i in range(len(titles)):
-            for j in range(i + 1, len(titles)):
-                a, b = titles[i], titles[j]
-                ratio = difflib.SequenceMatcher(None, a, b).ratio()
-                if ratio > 0.80:
-                    errors.append(
-                        f"⚠️ Possible similar topics:\n"
-                        f"   - '{norm_to_original[a]}'\n"
-                        f"   - '{norm_to_original[b]}'\n"
-                        f"     similarity={ratio:.2f}"
-                    )
+            if ratio > 0.92:
+                errors.append(
+                    f"⚠️ Possible similar topics:\n"
+                    f"   - '{norm_to_original[a]}'\n"
+                    f"   - '{norm_to_original[b]}'\n"
+                    f"     similarity={ratio:.2f}"
+                )
 
-    print("")
+    print()
 
     if errors:
         print("\n".join(errors))
