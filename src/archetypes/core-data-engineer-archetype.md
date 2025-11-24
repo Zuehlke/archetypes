@@ -7,17 +7,25 @@ Data Engineers focus on solving real-world problems through data, ensuring relia
 This archetype serves as a roadmap for professionals shaping their careers in data engineering, from foundational skills to advanced mastery.
 
 
-## Professional Data Engineer
+## Novice
+* SQL Basic (simple queries)
+* Data Pipeline Basic (Python, PySpark)
+* RDBMS Basic (Database, Schema, Tables, Views)
+* Data Storage Basic (Stroage Options, File Types)
+
+
+## Advanced Beginner
 
 * SQL Mastery (complex queries, optimization)
 * Data Pipeline Programming (Python, PySpark, or Scala for ETL)
 * Batch Processing (Pandas, Spark, cloud ETL tools)
-* Database/ Data Storage (RDBMS, NoSQL, cloud warehouses)
+* Database/ Data Storage Options (RDBMS, NoSQL, cloud warehouses)
 * Basic Orchestration (Airflow, Luigi)
 * Data Quality & Monitoring (validation, alerting)
 * Version Control Systems & CI/CD (Git, Jenkins/GitHub Actions)
 
-## Advanced Data Engineer
+
+## Competent
 
 * Advanced SQL (window functions, query tuning)
 * DataOps concepts (simple alerts)
@@ -28,7 +36,7 @@ This archetype serves as a roadmap for professionals shaping their careers in da
 * Infrastructure as Code (Terraform, CloudFormation)
 * Data Governance (metadata, access controls)
 
-## Expert Data Engineer
+## Proficient
 
 * Scalable Architectures (Lambda/Kappa, data mesh)
 * DataOps practices (test automation, operational runbooks)
@@ -39,10 +47,11 @@ This archetype serves as a roadmap for professionals shaping their careers in da
 * Cost Optimization (resource management, cloud efficiency)
 * Data Governance (data contracts, data lineage)
 
-## Lead Data Engineer
+## Expert
 
 * Multi-Cloud/Hybrid Architectures
 * High-Performance Data Systems (petabyte-scale optimization)
 * Economic Impact Analysis (ROI of data investments)
 * Industry Thought Leadership (conferences, open-source contributions)
 * Executive Communication (translating tech to business value)
+
