@@ -53,7 +53,7 @@ The `pre-commit` hook will rebuild the static website before every commit.
 We use AI to speed up content generation. While the archetype based learning journeys are maintained by an expert community, the workload of the maintainers is too high to provide a large enough body of documents.
 
 AI is used to create first versions of topic pages based on all topics listed on the archetype pages.
-Topic pages that are missing, or are considered a stub, are added by AI. A stub is a topic page that only has a title and a description of one to three sentences, but is missing learning resources and a comprehensive description. Copilot or other AI tools can be used to augment topic pages:
+Topic pages that are missing, or are considered a stub, are added by AI. A stub is a topic page that only has a title and a description of one to three sentences, but is missing learning resources and a comprehensive description. Copilot or other AI tools is used to augment topic pages:
 
 - Create missing pages
 - Provide the structure as laid out in the data architecture
@@ -62,6 +62,9 @@ Topic pages that are missing, or are considered a stub, are added by AI. A stub 
   - Original documentation is preferrable
   - Youtube videos from widely accepted channels with a long history of reliable information are acceptable
   - Freely accessible ressources are preferred to paid-for offers
+  - AI-generated pages are marked with the slug "AI-generated" in the YAML for topic pages
+
+The AI does not overwrite Topic pages that are already fleshed out beyond a stub.
 
 ## Maintainers
 

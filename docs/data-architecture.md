@@ -71,6 +71,7 @@ Detailed learning content for a specific skill or concept (e.g., "Version Contro
 - **cross_references**: Links to related topics
 
 ### Learning Resource
+
 Individual learning materials embedded directly within topics (not normalized as separate entities):
 
 - **external_link**: Web resources and documentation
@@ -93,6 +94,7 @@ Individual learning materials embedded directly within topics (not normalized as
 ## Implementation Notes
 
 ### YAML Frontmatter Structure
+
 Data is stored as YAML frontmatter at the top of markdown files:
 
 ```markdown
@@ -119,12 +121,15 @@ Description and rich content here...
 - Missing topic pages will result in 404 errors until content is created
 
 ### Identifier System
+
 All entities use slug-based identifiers for cross-referencing:
+
 - **Topics**: Use filename slug (e.g., `version-control-systems`)
 - **Archetypes**: Use filename slug (e.g., `core-software-engineer`)
 - **Learning Resources**: Can optionally have slugs for cross-referencing between topics
 
 ### Learning Resource Identification
+
 Learning resources are **embedded within topic frontmatter** rather than being separate referenced entities:
 
 ```yaml
@@ -151,6 +156,7 @@ Description of version control systems...
 ```
 
 **Rationale:**
+
 - Learning resources are specific to each topic
 - No need for separate files or cross-referencing
 - Simpler data structure and maintenance
@@ -166,7 +172,9 @@ learning_resources:
 ```
 
 ### Learning Resource Types
+
 Learning resources are classified by type to enable appropriate rendering:
+
 - **external_link**: Simple web links
 - **book**: Include bibliographic information (author, publisher, year)
 - **course**: Internal training materials (marked with access restrictions)
@@ -174,6 +182,7 @@ Learning resources are classified by type to enable appropriate rendering:
 - **pdf**: Presentations and documents (include embed codes)
 
 ### Cross-References
+
 Topics can reference related topics using the same slug-based system to create learning pathways and show conceptual relationships.
 
 Example:
@@ -193,6 +202,7 @@ Description of XP practices...
 ```
 
 ### Build Process
+
 1. **MkDocs reads** markdown files with YAML frontmatter
 2. **Frontmatter extracted** automatically (available as `page.meta`)
 3. **Macro plugin processes** `{{ macro_calls() }}` using frontmatter data
