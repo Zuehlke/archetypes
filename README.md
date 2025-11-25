@@ -53,7 +53,7 @@ The `pre-commit` hook will rebuild the static website before every commit.
 This project is maintained by:
 
 * **Patrick Burls** ([@pburls](https://github.com/pburls))
-* **Kevin Denver** ([@kdenver](https://github.com/kevin-denver))
+* **Fabio Scagliola** ([@fabioscagliola](https://github.com/fabioscagliola))
 
 Feel free to reach out to any maintainer if you have questions or need assistance.
 
