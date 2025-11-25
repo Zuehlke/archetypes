@@ -57,6 +57,18 @@ This project is maintained by:
 
 Feel free to reach out to any maintainer if you have questions or need assistance.
 
+## Contributors
+
+We'd like to thank the following individuals for their significant contributions:
+
+* **Kevin Denver** ([@kevin-denver](https://github.com/kevin-denver)) - Set up the initial project and scaffolded the Core Software Engineer archetype
+* **Milan Starcevic** ([@MilanStarcevicZuehlke](https://github.com/MilanStarcevicZuehlke)) - Created the FSI Software Engineer archetype and contributed extensive FSI-related topics (banking, insurance, financial crimes, regulations)
+* **Milos Bjelcevic** ([@milosbjelceviczuhlke](https://github.com/milosbjelceviczuhlke)) - Contributed to the project structure and design
+* **Fabio Scagliola** ([@fabioscagliola](https://github.com/fabioscagliola)) - Contributed to the project structure and design
+* **Patrick Burls** ([@pburls](https://github.com/pburls)) - Contributed to the project structure and design
+
+For a complete list of all contributors, see our [GitHub contributors page](https://github.com/Zuehlke/archetypes/graphs/contributors).
+
 ## License
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
