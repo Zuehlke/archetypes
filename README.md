@@ -55,7 +55,7 @@ This project is maintained by:
 * **Patrick Burls** ([@pburls](https://github.com/pburls))
 * **Fabio Scagliola** ([@fabioscagliola](https://github.com/fabioscagliola))
 
-Feel free to reach out to any maintainer if you have questions or need assistance.
+Feel free to reach out to any maintainer if you have questions or need assistance. You can also contact us via the [Archetypes > General](https://teams.microsoft.com/l/channel/19%3AKP35frVs7vgqGUh8X0iYTMPPWEzy5tqQ41Y6bcF_3oM1%40thread.tacv2/General?groupId=22083902-eb02-4c49-aeb5-04bdf19ddfd4&tenantId=ccce7f5e-a35f-4bc3-8e63-b2215e7d14f9) Teams channel using the @maintainers tag.
 
 ## Contributors
 
