@@ -29,6 +29,4 @@ cross_references:
 
 Monitoring collects predefined metrics. Observability is understanding system state from its outputs. This topic covers metrics, logs, traces, alerting, dashboards, and on-call practices. Good observability prevents outages, enables faster incident response, and drives improvements.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

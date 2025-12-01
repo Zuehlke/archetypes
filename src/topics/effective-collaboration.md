@@ -28,6 +28,4 @@ cross_references:
 
 Effective collaboration is the ability to work well with others toward common goals. It includes clear communication, active listening, managing disagreement constructively, and building psychological safety. In software development, collaboration reduces defects, spreads knowledge, and prevents isolated decision-making.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

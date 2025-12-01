@@ -28,6 +28,4 @@ cross_references:
 
 Domain-Driven Design (DDD) is aligning software architecture with business domain. It emphasizes understanding the domain deeply, using ubiquitous language shared between developers and domain experts, and organizing code around domain concepts. DDD helps teams build software that's maintainable, changeable, and truly solves business problems.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

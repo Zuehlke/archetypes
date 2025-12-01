@@ -28,6 +28,4 @@ cross_references:
 
 The operating system shell (bash, zsh, PowerShell) is where developers spend significant time. Understanding command-line basics: files, directories, permissions, processes, pipes, and scripting enables efficient workflows. Shell knowledge transcends specific tools and accelerates development.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

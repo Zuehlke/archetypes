@@ -28,6 +28,4 @@ cross_references:
 
 REST (Representational State Transfer) is an architectural style for designing web services using HTTP methods, resource-oriented URLs, and stateless communication. This topic covers RESTful principles, HTTP semantics, resource design, hypermedia, and common patterns. Understanding REST helps design scalable, cacheable services.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

@@ -29,6 +29,4 @@ cross_references:
 
 Cloud computing shifts from owning infrastructure to renting compute, storage, and networking on-demand. This topic covers service models (IaaS, PaaS, SaaS), major providers, deployment models, elasticity, and pay-as-you-go pricing. Understanding cloud includes decisions about data residency, security, cost optimization, and multi-region deployment.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

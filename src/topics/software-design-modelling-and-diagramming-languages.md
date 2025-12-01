@@ -28,6 +28,4 @@ cross_references:
 
 Communicating design requires shared languages and diagrams: UML, C4 model, domain models, flowcharts. This topic covers when and how to use diagrams, tools, and recognizing that design documents have costs—too many become unmaintained; too few leaves decisions implicit.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

@@ -28,6 +28,4 @@ cross_references:
 
 End-to-end (E2E) testing validates entire systems from the user's perspective, exercising multiple components and integrations. E2E tests run against real or near-real environments and verify complete workflows. This topic covers test automation strategies, test data management, browser automation tools, and balancing coverage with maintainability. Effective E2E testing catches integration issues early and provides release confidence.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

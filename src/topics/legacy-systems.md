@@ -29,6 +29,4 @@ cross_references:
 
 Legacy systems are older software that's difficult to maintain or extend but critical to business. This topic covers understanding legacy code, testing without a test suite, making safe changes, and gradual refactoring strategies. Legacy systems often represent significant business value and institutional knowledge.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

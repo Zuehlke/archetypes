@@ -28,6 +28,4 @@ cross_references:
 
 Data structures are organized ways to store and access data efficiently. Understanding arrays, linked lists, trees, graphs, hash tables, and heaps is fundamental to writing efficient algorithms. This topic covers when to use each structure, time/space complexity trade-offs, and how built-in collections leverage these concepts.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

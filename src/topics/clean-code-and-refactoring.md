@@ -29,6 +29,4 @@ cross_references:
 
 Clean code is easy to read, understand, maintain, and extend. Refactoring is improving code structure without changing behavior, guided by tests and incremental changes. This topic covers naming conventions, function design, error handling, and code smells. Refactoring prevents technical debt that slows development.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

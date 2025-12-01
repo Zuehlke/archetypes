@@ -28,6 +28,4 @@ cross_references:
 
 Continuous Integration automatically builds, tests, and validates code changes multiple times daily. CI catches integration issues early and prevents breaking changes from reaching main branches. This topic covers version control workflows, CI/CD platforms, test automation, and code quality gates.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

@@ -29,6 +29,4 @@ cross_references:
 
 DevOps is a cultural shift breaking silos between development and operations, emphasizing collaboration, automation, and continuous improvement. The DevOps mindset values shared responsibility for system reliability, infrastructure as code, monitoring-driven development, and blameless post-mortems. It's not just tools but a culture of accountability and learning.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

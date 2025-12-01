@@ -28,6 +28,4 @@ cross_references:
 
 Competent engineers understand that different languages and paradigms (imperative, functional, object-oriented) solve problems differently. This topic covers learning new languages, recognizing paradigm strengths, and choosing tools appropriately. Polyglot development prevents over-attachment to single tools.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

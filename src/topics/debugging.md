@@ -28,6 +28,4 @@ cross_references:
 
 Debugging is the systematic process of finding and fixing defects. Beyond print statements and breakpoints, effective debugging includes understanding program flow, state analysis, hypothesis formation, and using debugging tools well. This topic covers debugging strategies, reading stack traces, memory issues, and preventing bugs through design.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

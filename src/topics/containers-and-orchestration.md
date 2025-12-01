@@ -29,6 +29,4 @@ cross_references:
 
 Containers (Docker, Podman) package applications with dependencies into portable units. Orchestration platforms (Kubernetes) manage deployment, scaling, networking, and lifecycle at scale. This topic covers container images, registries, orchestration strategies like rolling updates, and operational concerns around security and networking.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

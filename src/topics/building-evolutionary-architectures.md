@@ -29,6 +29,4 @@ cross_references:
 
 Evolutionary architecture is designing systems that adapt as requirements change, emphasizing incremental decisions, modular boundaries, and the ability to refactor at scale. This topic covers structuring codebases, managing dependencies, establishing architectural fitness functions, and balancing consistency with flexibility. Evolutionary architecture acknowledges that perfect foresight is impossible and instead creates gracefully evolving systems.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

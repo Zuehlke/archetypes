@@ -28,6 +28,4 @@ cross_references:
 
 Mentoring is helping others develop skills and navigate careers. Coaching is unlocking someone's potential through questions and reflection. Both require active listening, patience, and understanding people. This topic covers developing others, handling difficult conversations, and recognizing when to mentor vs. when to step back.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

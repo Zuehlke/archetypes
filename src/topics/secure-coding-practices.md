@@ -29,6 +29,4 @@ cross_references:
 
 Secure coding means writing software resistant to attacks. This topic covers common vulnerabilities (injection, XSS, CSRF), input validation, authentication, authorization, cryptography basics, and secure development practices. Security must be designed in, not added after.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

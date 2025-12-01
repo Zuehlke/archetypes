@@ -29,6 +29,4 @@ cross_references:
 
 SOLID is five object-oriented design principles: Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion. These principles guide design toward maintainable, extensible code. Understanding SOLID helps recognize design problems and find solutions.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

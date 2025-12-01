@@ -29,6 +29,4 @@ cross_references:
 
 'Shifting left' means addressing security early in development rather than at the end. This topic covers secure design, threat modeling, security testing, code review practices, and preventing vulnerabilities from reaching production. Left-shift reduces costly security incidents.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

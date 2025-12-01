@@ -29,6 +29,4 @@ cross_references:
 
 Enterprise applications have complex requirements: scalability, reliability, maintainability, and evolving business logic. Enterprise design patterns address these challenges: message-oriented middleware, event sourcing, CQRS, saga pattern for transactions, and more. Understanding these patterns helps build systems that survive organizational change.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

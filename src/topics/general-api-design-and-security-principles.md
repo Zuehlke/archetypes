@@ -29,6 +29,4 @@ cross_references:
 
 APIs are contracts between systems. Good API design includes consistent naming, clear semantics, versioning strategy, and discoverability. Security includes authentication, authorization, rate limiting, and preventing common vulnerabilities. This topic covers HTTP APIs, REST principles, GraphQL considerations, and practical security measures.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

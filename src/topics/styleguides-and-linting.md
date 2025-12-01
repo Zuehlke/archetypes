@@ -27,6 +27,4 @@ cross_references:
 
 Consistent code style improves readability and reduces review friction. Linters catch style violations automatically. This topic covers establishing styleguides, configuring linters, and balancing consistency with flexibility. Style is not subjective—agreed standards enable focus on meaningful discussions.
 
-## Learning Materials
-
 {{ render_learning_resources() }}

@@ -28,6 +28,4 @@ cross_references:
 
 Root cause analysis (RCA) is finding the underlying reason defects or incidents occur, not just the immediate symptom. This topic covers RCA methods (5 Whys, fishbone diagrams), blameless post-mortems, and preventing recurrence. Good RCA prevents repeating mistakes.
 
-## Learning Materials
-
 {{ render_learning_resources() }}
