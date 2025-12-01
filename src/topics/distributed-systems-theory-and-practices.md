@@ -1,6 +1,6 @@
 ---
 title: Distributed Systems Theory and Practices
-description: >-
+description: >
   Distributed systems span multiple machines and must handle concurrency, failure, and consistency challenges. This topic covers fundamental concepts: CAP theorem, eventual consistency, consensus algorithms, distributed transactions, and failure detection. Understanding these helps design resilient systems and make trade-off decisions.
 learning_resources:
   - type: book

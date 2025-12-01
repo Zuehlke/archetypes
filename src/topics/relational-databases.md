@@ -1,6 +1,6 @@
 ---
 title: Relational Databases
-description: >-
+description: >
   Relational databases (SQL) organize data into tables with relationships. This topic covers schema design, normalization, SQL queries, indexing, transactions, and ACID properties. SQL remains dominant for structured data, and understanding relational concepts helps with any database.
 learning_resources:
   - type: book

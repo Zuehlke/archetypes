@@ -1,6 +1,6 @@
 ---
 title: Technical Architecture Introduction
-description: >-
+description: >
   Architecture is high-level structure and design decisions. This introductory topic covers architecture thinking, stakeholder concerns, documenting architecture, architectural styles (monolith, microservices, serverless), and making trade-offs. Architecture shapes what's possible later.
 learning_resources:
   - type: book

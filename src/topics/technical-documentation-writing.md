@@ -1,6 +1,6 @@
 ---
 title: Technical Documentation Writing
-description: >-
+description: >
   Good technical documentation helps people understand and use systems. This topic covers clarity, structure, examples, and maintaining documentation. Poor documentation wastes time; great documentation multiplies team productivity.
 learning_resources:
   - type: book

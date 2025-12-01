@@ -1,6 +1,6 @@
 ---
 title: Pair Programming
-description: >-
+description: >
   Pair programming is two developers working together at one computer. Studies show it catches defects early, spreads knowledge, and improves code quality. This topic covers pair programming styles (driver/navigator, ping-pong), remote pairing, when to pair, and overcoming resistance.
 learning_resources:
   - type: external_link

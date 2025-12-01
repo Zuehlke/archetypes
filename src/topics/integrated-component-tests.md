@@ -1,6 +1,6 @@
 ---
 title: Integrated Component Tests
-description: >-
+description: >
   Integration tests verify that multiple components work together correctly, testing the interactions between units while still being faster than end-to-end tests. This topic covers test isolation, mocking strategies, database testing, and finding the right balance between unit and E2E tests for efficient feedback.
 learning_resources:
   - type: external_link

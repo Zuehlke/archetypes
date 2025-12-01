@@ -1,6 +1,6 @@
 ---
 title: Mentoring and Coaching
-description: >-
+description: >
   Mentoring is helping others develop skills and navigate careers. Coaching is unlocking someone's potential through questions and reflection. Both require active listening, patience, and understanding people. This topic covers developing others, handling difficult conversations, and recognizing when to mentor vs. when to step back.
 learning_resources:
   - type: book

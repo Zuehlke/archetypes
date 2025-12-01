@@ -1,6 +1,6 @@
 ---
 title: Building for Scale
-description: >-
+description: >
   Scaling is handling increasing load—more users, data, or transactions. Building for scale requires early architectural decisions: monolith vs. microservices, caching strategies, database design. This topic covers horizontal/vertical scaling, load balancing, caching layers, database optimization, and load testing. Premature optimization is anti-pattern, but thoughtless design that can't scale is equally problematic.
 learning_resources:
   - type: book

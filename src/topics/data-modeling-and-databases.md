@@ -1,6 +1,6 @@
 ---
 title: Data Modeling and Databases
-description: >-
+description: >
   Data modeling is designing how data is structured and organized. Database understanding covers relational, NoSQL, and specialized databases. This topic includes schema design, normalization, indexing, query optimization, transactions, and choosing the right database for use cases. Good data design prevents performance problems and enables future scaling.
 learning_resources:
   - type: book

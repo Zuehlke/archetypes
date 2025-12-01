@@ -1,6 +1,6 @@
 ---
 title: Scrum
-description: >-
+description: >
   Scrum is a popular Agile framework organizing work into sprints with defined roles (Product Owner, Scrum Master, Development Team) and ceremonies (standups, planning, retrospectives). This topic covers Scrum practices, avoiding common pitfalls, and adapting Scrum to organizational contexts.
 learning_resources:
   - type: external_link

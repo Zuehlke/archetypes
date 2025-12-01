@@ -1,6 +1,6 @@
 ---
 title: Performance and Scalability
-description: >-
+description: >
   Performance is how fast systems respond. Scalability is maintaining performance as load grows. This topic covers profiling, benchmarking, caching, algorithmic optimization, and recognizing when infrastructure changes beat code optimization. Premature optimization is wasted effort; measure first.
 learning_resources:
   - type: book

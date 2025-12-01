@@ -1,6 +1,6 @@
 ---
 title: Styleguides and Linting
-description: >-
+description: >
   Consistent code style improves readability and reduces review friction. Linters catch style violations automatically. This topic covers establishing styleguides, configuring linters, and balancing consistency with flexibility. Style is not subjective—agreed standards enable focus on meaningful discussions.
 learning_resources:
   - type: external_link

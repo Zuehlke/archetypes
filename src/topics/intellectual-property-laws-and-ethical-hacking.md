@@ -1,6 +1,6 @@
 ---
 title: Intellectual Property Laws and Ethical Hacking
-description: >-
+description: >
   As a software engineer, you need understanding of IP law: copyrights, patents, trademarks, and licensing. Ethical hacking is security testing with permission to find vulnerabilities. This topic covers open source licensing considerations, when to seek legal advice, and how security researchers responsibly disclose vulnerabilities.
 learning_resources:
   - type: book

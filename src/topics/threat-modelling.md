@@ -1,6 +1,6 @@
 ---
 title: Threat Modelling
-description: >-
+description: >
   Threat modeling is systematically identifying and evaluating security threats. This topic covers methodologies (STRIDE, PASTA), diagrams, risk assessment, and feeding results into design and development. Threat modeling prevents designing systems without considering threats.
 learning_resources:
   - type: book

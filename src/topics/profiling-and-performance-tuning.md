@@ -1,6 +1,6 @@
 ---
 title: Profiling and Performance Tuning
-description: >-
+description: >
   Profiling is measuring where time and resources are spent. Tuning is improving performance based on profiling results. This topic covers CPU profiling, memory profiling, flamegraphs, and systematic optimization. Good tuning is data-driven, not guessing.
 learning_resources:
   - type: book

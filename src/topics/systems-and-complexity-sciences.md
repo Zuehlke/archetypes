@@ -1,6 +1,6 @@
 ---
 title: Systems and Complexity Sciences
-description: >-
+description: >
   Complex systems (like large software systems) have emergent properties that aren't obvious from individual components. This topic covers systems thinking, feedback loops, non-linear dynamics, and understanding organizations as systems. Systems perspective prevents treating symptoms rather than root causes.
 learning_resources:
   - type: book

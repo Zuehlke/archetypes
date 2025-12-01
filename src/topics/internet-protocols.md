@@ -1,6 +1,6 @@
 ---
 title: Internet Protocols
-description: >-
+description: >
   Internet protocols are the standards enabling communication across networks. This topic covers TCP/IP, DNS, HTTP, TLS/SSL, and how applications communicate over networks. Understanding protocols helps debug network issues, design resilient systems, and understand security implications.
 learning_resources:
   - type: book

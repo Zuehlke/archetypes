@@ -1,6 +1,6 @@
 ---
 title: User Stories
-description: >-
+description: >
   User stories are short descriptions of features from the user's perspective: 'As [role] I want [capability] so that [benefit]'. This topic covers writing good stories, acceptance criteria, estimation, and preventing them from becoming requirements dumping grounds. Good stories facilitate conversation and deliver value.
 learning_resources:
   - type: book

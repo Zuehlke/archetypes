@@ -1,6 +1,6 @@
 ---
 title: Component Architectures
-description: >-
+description: >
   Component-based architecture organizes systems into discrete, reusable, independently deployable modules with well-defined interfaces. This approach scales better as complexity grows and enables parallel team work. Understanding component architecture helps with module design, API contracts, and deployment topology decisions.
 learning_resources:
   - type: book

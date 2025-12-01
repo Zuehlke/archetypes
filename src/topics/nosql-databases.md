@@ -1,6 +1,6 @@
 ---
 title: NoSQL Databases
-description: >-
+description: >
   NoSQL databases (document stores, key-value, graph, time-series) offer alternatives to relational databases. Each NoSQL type excels at different access patterns. This topic covers understanding data models, consistency trade-offs, scalability characteristics, and choosing appropriate databases.
 learning_resources:
   - type: book

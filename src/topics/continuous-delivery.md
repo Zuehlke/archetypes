@@ -1,6 +1,6 @@
 ---
 title: Continuous Delivery
-description: >-
+description: >
   Continuous Delivery automates the software release process so code can be deployed to production at any time. CD covers release planning, deployment strategies (blue-green, canary, feature flags), rollback procedures, and monitoring. Effective CD reduces release risk and enables rapid iteration.
 learning_resources:
   - type: book

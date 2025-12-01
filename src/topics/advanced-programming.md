@@ -1,6 +1,6 @@
 ---
 title: Advanced Programming
-description: >-
+description: >
   Advanced programming builds on core language mastery to tackle complex architectural patterns, performance optimization, and sophisticated design approaches. This encompasses understanding memory models, concurrency patterns, metaprogramming capabilities, and framework internals. Advanced programmers write code that's not just correct but elegant—minimizing complexity, maximizing efficiency, and enabling others to build upon their work.
 learning_resources:
   - type: book

@@ -1,6 +1,6 @@
 ---
 title: OS/Shell Basics
-description: >-
+description: >
   The operating system shell (bash, zsh, PowerShell) is where developers spend significant time. Understanding command-line basics: files, directories, permissions, processes, pipes, and scripting enables efficient workflows. Shell knowledge transcends specific tools and accelerates development.
 learning_resources:
   - type: book

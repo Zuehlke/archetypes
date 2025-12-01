@@ -1,6 +1,6 @@
 ---
 title: Non-Functional Requirements
-description: >-
+description: >
   Non-functional requirements (NFRs) define how systems must behave: performance, security, reliability, usability, compliance. Unlike functional requirements ('the system calculates X'), NFRs describe quality attributes ('the system responds in under 100ms'). Explicit NFRs guide architecture and prevent discovering requirements late.
 learning_resources:
   - type: book

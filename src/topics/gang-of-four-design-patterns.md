@@ -1,6 +1,6 @@
 ---
 title: Gang of Four Design Patterns
-description: >-
+description: >
   The Gang of Four (GoF) design patterns are 23 reusable solutions to common object-oriented design problems, categorized as creational, structural, and behavioral. These patterns provide proven solutions and shared vocabulary for design discussions. Understanding patterns helps recognize problems they solve and avoid reimplementing similar solutions.
 learning_resources:
   - type: book
