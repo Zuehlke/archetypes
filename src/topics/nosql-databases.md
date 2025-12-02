@@ -1,26 +1,20 @@
 ---
 title: NoSQL Databases
-description: >
-  NoSQL databases (document stores, key-value, graph, time-series) offer alternatives to relational databases. Each NoSQL type excels at different access patterns. This topic covers understanding data models, consistency trade-offs, scalability characteristics, and choosing appropriate databases.
+description: 'NoSQL databases (document stores, key-value, graph, time-series) offer
+  alternatives to relational databases. Each NoSQL type excels at different access
+  patterns. This topic covers understanding data models, consistency trade-offs, scalability
+  characteristics, and choosing appropriate databases.
+
+  '
 learning_resources:
-  - type: book
-    title: "NoSQL Distilled"
-    url: "https://www.oreilly.com/library/view/nosql-distilled/9781633430198/"
-    description: "Overview of NoSQL databases and paradigms."
-    author: "Pramod Sadalage"
-  - type: external_link
-    title: "MongoDB Documentation"
-    url: "https://docs.mongodb.com/"
-    description: "Leading document database documentation."
-  - type: book
-    title: "Designing Data-Intensive Applications"
-    url: "https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491902141/"
-    description: "Comparison of database models and trade-offs."
-    author: "Martin Kleppmann"
+- type: external_link
+  title: MongoDB Documentation
+  url: https://docs.mongodb.com/
+  description: Leading document database documentation.
 cross_references:
-  - data-modeling-and-databases
-  - relational-databases
-  - building-for-scale
+- data-modeling-and-databases
+- relational-databases
+- building-for-scale
 ---
 
 # NoSQL Databases

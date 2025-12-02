@@ -8,4 +8,4 @@ cross_references: []
 
 A brief overview of essential developer tools and their usage.
 
-- 
+-

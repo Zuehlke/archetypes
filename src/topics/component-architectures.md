@@ -1,25 +1,24 @@
 ---
 title: Component Architectures
-description: >
-  Component-based architecture organizes systems into discrete, reusable, independently deployable modules with well-defined interfaces. This approach scales better as complexity grows and enables parallel team work. Understanding component architecture helps with module design, API contracts, and deployment topology decisions.
+description: 'Component-based architecture organizes systems into discrete, reusable,
+  independently deployable modules with well-defined interfaces. This approach scales
+  better as complexity grows and enables parallel team work. Understanding component
+  architecture helps with module design, API contracts, and deployment topology decisions.
+
+  '
 learning_resources:
-  - type: book
-    title: "Building Microservices"
-    url: "https://samnewman.io/books/building_microservices/"
-    description: "Patterns and practices for component-based systems."
-    author: "Sam Newman"
-  - type: book
-    title: "Component Software"
-    url: "https://www.oreilly.com/library/view/component-software-beyond/9780132156066/"
-    description: "Foundational text on component-based architecture."
-    author: "Clemens Szyperski"
-  - type: external_link
-    title: "Modular Monoliths"
-    url: "https://www.youtube.com/watch?v=5OjqD-ow8GE"
-    description: "Achieving component benefits within monolithic structure."
+- type: book
+  title: Building Microservices
+  url: https://samnewman.io/books/building_microservices/
+  description: Patterns and practices for component-based systems.
+  author: Sam Newman
+- type: external_link
+  title: Modular Monoliths
+  url: https://www.youtube.com/watch?v=5OjqD-ow8GE
+  description: Achieving component benefits within monolithic structure.
 cross_references:
-  - technical-architecture-intro
-  - enterprise-design-patterns
+- technical-architecture-intro
+- enterprise-design-patterns
 ---
 
 # Component Architectures

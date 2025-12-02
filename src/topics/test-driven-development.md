@@ -1,18 +1,18 @@
 ---
 title: Test-Driven Development (TDD)
 learning_resources:
-  - type: "book"
-    title: "Tidy First?"
-    author: "Kent Beck"
-    url: "https://www.oreilly.com/library/view/tidy-first/9781098151232/"
-  - type: "book"
-    title: "Growing Object-Oriented Software, Guided by Tests"
-    author: "Steve Freeman and Nat Pryce"
-    url: "https://www.oreilly.com/library/view/growing-object-oriented-software/9780321574442/"
-  - type: "course"
-    title: "Writing Good Tests with JUnit"
-    url: "https://wd3.myworkday.com/zuehlke/learning/course/63dc6ad4fa471000a4cd260b776e0000?type=9882927d138b100019b6a2df1a46018b"
-    is_internal: true
+- type: book
+  title: Tidy First?
+  author: Kent Beck
+  url: https://www.oreilly.com/library/view/tidy-first/9781098151232/
+- type: book
+  title: Growing Object-Oriented Software, Guided by Tests
+  author: Steve Freeman and Nat Pryce
+  url: https://www.oreilly.com/library/view/growing-object-oriented-software/9780321574442/
+- type: course
+  title: Writing Good Tests with JUnit
+  url: https://wd3.myworkday.com/zuehlke/learning/course/63dc6ad4fa471000a4cd260b776e0000?type=9882927d138b100019b6a2df1a46018b
+  is_internal: true
 ---
 
 # Test Driven Development (TDD)

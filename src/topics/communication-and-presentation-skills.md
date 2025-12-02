@@ -8,4 +8,4 @@ cross_references: []
 
 Techniques for effective communication and presentation in software teams.
 
-- 
+-

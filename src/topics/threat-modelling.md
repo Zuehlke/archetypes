@@ -1,25 +1,25 @@
 ---
 title: Threat Modelling
-description: >
-  Threat modeling is systematically identifying and evaluating security threats. This topic covers methodologies (STRIDE, PASTA), diagrams, risk assessment, and feeding results into design and development. Threat modeling prevents designing systems without considering threats.
+description: 'Threat modeling is systematically identifying and evaluating security
+  threats. This topic covers methodologies (STRIDE, PASTA), diagrams, risk assessment,
+  and feeding results into design and development. Threat modeling prevents designing
+  systems without considering threats.
+
+  '
 learning_resources:
-  - type: book
-    title: "Threat Modeling"
-    url: "https://www.oreilly.com/library/view/threat-modeling/9781492056546/"
-    description: "Comprehensive threat modeling methodology and practice."
-    author: "Adam Shostack"
-  - type: external_link
-    title: "STRIDE Threat Model"
-    url: "https://en.wikipedia.org/wiki/STRIDE_(security)"
-    description: "Microsoft's STRIDE threat model framework."
-  - type: external_link
-    title: "OWASP Threat Modeling"
-    url: "https://owasp.org/www-community/Threat_Modeling"
-    description: "Threat modeling resources and techniques."
+- type: book
+  title: Threat Modeling
+  url: https://www.oreilly.com/library/view/threat-modeling/9781492056546/
+  description: Comprehensive threat modeling methodology and practice.
+  author: Adam Shostack
+- type: external_link
+  title: OWASP Threat Modeling
+  url: https://owasp.org/www-community/Threat_Modeling
+  description: Threat modeling resources and techniques.
 cross_references:
-  - secure-coding-practices
-  - shifting-left-security
-  - non-functional-requirements
+- secure-coding-practices
+- shifting-left-security
+- non-functional-requirements
 ---
 
 # Threat Modelling

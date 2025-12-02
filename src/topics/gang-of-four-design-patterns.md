@@ -1,26 +1,26 @@
 ---
 title: Gang of Four Design Patterns
-description: >
-  The Gang of Four (GoF) design patterns are 23 reusable solutions to common object-oriented design problems, categorized as creational, structural, and behavioral. These patterns provide proven solutions and shared vocabulary for design discussions. Understanding patterns helps recognize problems they solve and avoid reimplementing similar solutions.
+description: 'The Gang of Four (GoF) design patterns are 23 reusable solutions to
+  common object-oriented design problems, categorized as creational, structural, and
+  behavioral. These patterns provide proven solutions and shared vocabulary for design
+  discussions. Understanding patterns helps recognize problems they solve and avoid
+  reimplementing similar solutions.
+
+  '
 learning_resources:
-  - type: book
-    title: "Design Patterns"
-    url: "https://www.oreilly.com/library/view/design-patterns-elements/9780201633610/"
-    description: "The original and definitive design patterns reference."
-    author: "Gang of Four"
-  - type: external_link
-    title: "Refactoring Guru"
-    url: "https://refactoring.guru/design-patterns"
-    description: "Interactive guide to design patterns with examples."
-  - type: book
-    title: "Head First Design Patterns"
-    url: "https://www.oreilly.com/library/view/head-first-design/0596007124/"
-    description: "Accessible introduction to design patterns."
-    author: "Freeman and Freeman"
+- type: external_link
+  title: Refactoring Guru
+  url: https://refactoring.guru/design-patterns
+  description: Interactive guide to design patterns with examples.
+- type: book
+  title: Head First Design Patterns
+  url: https://www.oreilly.com/library/view/head-first-design/0596007124/
+  description: Accessible introduction to design patterns.
+  author: Freeman and Freeman
 cross_references:
-  - solid
-  - enterprise-design-patterns
-  - clean-code-and-refactoring
+- solid
+- enterprise-design-patterns
+- clean-code-and-refactoring
 ---
 
 # Gang of Four Design Patterns

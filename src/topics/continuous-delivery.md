@@ -1,26 +1,20 @@
 ---
 title: Continuous Delivery
-description: >
-  Continuous Delivery automates the software release process so code can be deployed to production at any time. CD covers release planning, deployment strategies (blue-green, canary, feature flags), rollback procedures, and monitoring. Effective CD reduces release risk and enables rapid iteration.
+description: 'Continuous Delivery automates the software release process so code can
+  be deployed to production at any time. CD covers release planning, deployment strategies
+  (blue-green, canary, feature flags), rollback procedures, and monitoring. Effective
+  CD reduces release risk and enables rapid iteration.
+
+  '
 learning_resources:
-  - type: book
-    title: "Continuous Delivery"
-    url: "https://www.oreilly.com/library/view/continuous-delivery/9780133039374/"
-    description: "Foundational text on reliable, frequent releases."
-    author: "Jez Humble"
-  - type: external_link
-    title: "Deployment Patterns - Fowler"
-    url: "https://martinfowler.com/bliki/DeploymentPipeline.html"
-    description: "Architectural patterns for deployment automation."
-  - type: book
-    title: "Release It!"
-    url: "https://www.oreilly.com/library/view/release-it-2nd/9781680504516/"
-    description: "Production readiness and safety patterns."
-    author: "Michael Nygard"
+- type: external_link
+  title: Deployment Patterns - Fowler
+  url: https://martinfowler.com/bliki/DeploymentPipeline.html
+  description: Architectural patterns for deployment automation.
 cross_references:
-  - continuous-integration
-  - monitoring-and-observability
-  - devops-mindset
+- continuous-integration
+- monitoring-and-observability
+- devops-mindset
 ---
 
 # Continuous Delivery

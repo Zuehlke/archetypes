@@ -1,25 +1,20 @@
 ---
 title: Pair Programming
-description: >
-  Pair programming is two developers working together at one computer. Studies show it catches defects early, spreads knowledge, and improves code quality. This topic covers pair programming styles (driver/navigator, ping-pong), remote pairing, when to pair, and overcoming resistance.
+description: 'Pair programming is two developers working together at one computer.
+  Studies show it catches defects early, spreads knowledge, and improves code quality.
+  This topic covers pair programming styles (driver/navigator, ping-pong), remote
+  pairing, when to pair, and overcoming resistance.
+
+  '
 learning_resources:
-  - type: external_link
-    title: "Pair Programming Guide"
-    url: "https://www.agilealliance.org/glossary/pairing/"
-    description: "Introduction to pair programming practices."
-  - type: book
-    title: "The Pragmatic Programmer"
-    url: "https://www.oreilly.com/library/view/the-pragmatic-programmer/9780135957059/"
-    description: "Includes pair programming section."
-    author: "David Thomas"
-  - type: external_link
-    title: "Remote Pair Programming"
-    url: "https://tuple.app/pair-programming-guide/"
-    description: "Best practices for remote pairing."
+- type: external_link
+  title: Remote Pair Programming
+  url: https://tuple.app/pair-programming-guide/
+  description: Best practices for remote pairing.
 cross_references:
-  - extreme-programming-practices
-  - effective-collaboration
-  - test-driven-development
+- extreme-programming-practices
+- effective-collaboration
+- test-driven-development
 ---
 
 # Pair Programming

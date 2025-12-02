@@ -1,26 +1,16 @@
 ---
 title: Systems and Complexity Sciences
-description: >
-  Complex systems (like large software systems) have emergent properties that aren't obvious from individual components. This topic covers systems thinking, feedback loops, non-linear dynamics, and understanding organizations as systems. Systems perspective prevents treating symptoms rather than root causes.
-learning_resources:
-  - type: book
-    title: "Thinking in Systems"
-    url: "https://www.oreilly.com/library/view/thinking-in-systems/9781603580557/"
-    description: "Systems thinking foundations and mental models."
-    author: "Donella Meadows"
-  - type: external_link
-    title: "Complex Systems"
-    url: "https://en.wikipedia.org/wiki/Complex_system"
-    description: "Overview of complex systems theory."
-  - type: book
-    title: "The Goal"
-    url: "https://www.oreilly.com/library/view/the-goal-revised/9780884271956/"
-    description: "Systems thinking applied to operations."
-    author: "Eliyahu Goldratt"
+description: 'Complex systems (like large software systems) have emergent properties
+  that aren''t obvious from individual components. This topic covers systems thinking,
+  feedback loops, non-linear dynamics, and understanding organizations as systems.
+  Systems perspective prevents treating symptoms rather than root causes.
+
+  '
+learning_resources: []
 cross_references:
-  - root-cause-analysis
-  - devops-mindset
-  - monitoring-and-observability
+- root-cause-analysis
+- devops-mindset
+- monitoring-and-observability
 ---
 
 # Systems and Complexity Sciences

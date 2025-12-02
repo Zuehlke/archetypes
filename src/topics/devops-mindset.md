@@ -1,26 +1,26 @@
 ---
 title: DevOps Mindset
-description: >
-  DevOps is a cultural shift breaking silos between development and operations, emphasizing collaboration, automation, and continuous improvement. The DevOps mindset values shared responsibility for system reliability, infrastructure as code, monitoring-driven development, and blameless post-mortems. It's not just tools but a culture of accountability and learning.
+description: 'DevOps is a cultural shift breaking silos between development and operations,
+  emphasizing collaboration, automation, and continuous improvement. The DevOps mindset
+  values shared responsibility for system reliability, infrastructure as code, monitoring-driven
+  development, and blameless post-mortems. It''s not just tools but a culture of accountability
+  and learning.
+
+  '
 learning_resources:
-  - type: book
-    title: "The Phoenix Project"
-    url: "https://www.oreilly.com/library/view/the-phoenix-project/9780988262935/"
-    description: "Novel introducing DevOps principles and culture."
-    author: "Gene Kim"
-  - type: book
-    title: "Accelerate"
-    url: "https://www.oreilly.com/library/view/accelerate/9781491944609/"
-    description: "Research-backed DevOps and high performance culture."
-    author: "Nicole Forsgren"
-  - type: external_link
-    title: "DevOps Handbook"
-    url: "https://itrevolution.com/devops-handbook/"
-    description: "Practical guide to DevOps practices."
+- type: book
+  title: Accelerate
+  url: https://www.oreilly.com/library/view/accelerate/9781491944609/
+  description: Research-backed DevOps and high performance culture.
+  author: Nicole Forsgren
+- type: external_link
+  title: DevOps Handbook
+  url: https://itrevolution.com/devops-handbook/
+  description: Practical guide to DevOps practices.
 cross_references:
-  - continuous-integration
-  - continuous-delivery
-  - monitoring-and-observability
+- continuous-integration
+- continuous-delivery
+- monitoring-and-observability
 ---
 
 # DevOps Mindset

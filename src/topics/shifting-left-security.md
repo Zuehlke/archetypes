@@ -1,26 +1,21 @@
 ---
 title: Shifting Left Security
-description: >
-  'Shifting left' means addressing security early in development rather than at the end. This topic covers secure design, threat modeling, security testing, code review practices, and preventing vulnerabilities from reaching production. Left-shift reduces costly security incidents.
+description: '''Shifting left'' means addressing security early in development rather
+  than at the end. This topic covers secure design, threat modeling, security testing,
+  code review practices, and preventing vulnerabilities from reaching production.
+  Left-shift reduces costly security incidents.
+
+  '
 learning_resources:
-  - type: book
-    title: "Threat Modeling"
-    url: "https://www.oreilly.com/library/view/threat-modeling/9781492056546/"
-    description: "Systematic approach to security design."
-    author: "Adam Shostack"
-  - type: external_link
-    title: "OWASP Secure Coding"
-    url: "https://owasp.org/www-community/controls/Secure_Coding_Practice"
-    description: "Secure development best practices."
-  - type: book
-    title: "Security for Developers"
-    url: "https://www.oreilly.com/library/view/security-for-developers/9781491926858/"
-    description: "Practical security for development teams."
-    author: "Tamara Bhatnagar"
+- type: book
+  title: Threat Modeling
+  url: https://www.oreilly.com/library/view/threat-modeling/9781492056546/
+  description: Systematic approach to security design.
+  author: Adam Shostack
 cross_references:
-  - secure-coding-practices
-  - threat-modelling
-  - continuous-integration
+- secure-coding-practices
+- threat-modelling
+- continuous-integration
 ---
 
 # Shifting Left Security

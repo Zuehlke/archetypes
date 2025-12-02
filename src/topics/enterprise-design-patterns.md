@@ -1,26 +1,26 @@
 ---
 title: Enterprise Design Patterns
-description: >
-  Enterprise applications have complex requirements: scalability, reliability, maintainability, and evolving business logic. Enterprise design patterns address these challenges: message-oriented middleware, event sourcing, CQRS, saga pattern for transactions, and more. Understanding these patterns helps build systems that survive organizational change.
+description: 'Enterprise applications have complex requirements: scalability, reliability,
+  maintainability, and evolving business logic. Enterprise design patterns address
+  these challenges: message-oriented middleware, event sourcing, CQRS, saga pattern
+  for transactions, and more. Understanding these patterns helps build systems that
+  survive organizational change.
+
+  '
 learning_resources:
-  - type: book
-    title: "Enterprise Integration Patterns"
-    url: "https://www.oreilly.com/library/view/enterprise-integration-patterns/9781492001219/"
-    description: "Comprehensive patterns for integrating systems."
-    author: "Gregor Hohpe"
-  - type: external_link
-    title: "Event Sourcing"
-    url: "https://martinfowler.com/eaaDev/EventSourcing.html"
-    description: "Patterns for event-driven architectures."
-  - type: book
-    title: "Building Microservices"
-    url: "https://samnewman.io/books/building_microservices/"
-    description: "Enterprise patterns for microservice systems."
-    author: "Sam Newman"
+- type: external_link
+  title: Event Sourcing
+  url: https://martinfowler.com/eaaDev/EventSourcing.html
+  description: Patterns for event-driven architectures.
+- type: book
+  title: Building Microservices
+  url: https://samnewman.io/books/building_microservices/
+  description: Enterprise patterns for microservice systems.
+  author: Sam Newman
 cross_references:
-  - technical-architecture-intro
-  - domain-driven-design
-  - building-evolutionary-architectures
+- technical-architecture-intro
+- domain-driven-design
+- building-evolutionary-architectures
 ---
 
 # Enterprise Design Patterns

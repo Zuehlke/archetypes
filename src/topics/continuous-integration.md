@@ -1,25 +1,24 @@
 ---
 title: Continuous Integration
-description: >
-  Continuous Integration automatically builds, tests, and validates code changes multiple times daily. CI catches integration issues early and prevents breaking changes from reaching main branches. This topic covers version control workflows, CI/CD platforms, test automation, and code quality gates.
+description: 'Continuous Integration automatically builds, tests, and validates code
+  changes multiple times daily. CI catches integration issues early and prevents breaking
+  changes from reaching main branches. This topic covers version control workflows,
+  CI/CD platforms, test automation, and code quality gates.
+
+  '
 learning_resources:
-  - type: book
-    title: "Continuous Integration"
-    url: "https://www.oreilly.com/library/view/continuous-integration/9781457194364/"
-    description: "Practical patterns and practices for CI."
-    author: "Paul Duvall"
-  - type: external_link
-    title: "GitHub Actions Documentation"
-    url: "https://docs.github.com/en/actions"
-    description: "CI/CD automation with GitHub Actions."
-  - type: external_link
-    title: "Trunk-Based Development"
-    url: "https://trunkbaseddevelopment.com/"
-    description: "Version control strategy supporting high-frequency CI."
+- type: external_link
+  title: GitHub Actions Documentation
+  url: https://docs.github.com/en/actions
+  description: CI/CD automation with GitHub Actions.
+- type: external_link
+  title: Trunk-Based Development
+  url: https://trunkbaseddevelopment.com/
+  description: Version control strategy supporting high-frequency CI.
 cross_references:
-  - the-test-pyramid
-  - styleguides-and-linting
-  - continuous-delivery
+- the-test-pyramid
+- styleguides-and-linting
+- continuous-delivery
 ---
 
 # Continuous Integration

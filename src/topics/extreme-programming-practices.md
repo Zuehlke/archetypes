@@ -2,10 +2,10 @@
 title: Extreme Programming (XP) Practices
 learning_resources: []
 cross_references:
-  - pair-programming
-  - test-driven-development
-  - continuous-integration
-  - clean-code-and-refactoring
+- pair-programming
+- test-driven-development
+- continuous-integration
+- clean-code-and-refactoring
 ---
 
 # Extreme Programming (XP) Practices

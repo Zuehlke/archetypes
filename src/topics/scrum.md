@@ -1,25 +1,19 @@
 ---
 title: Scrum
-description: >
-  Scrum is a popular Agile framework organizing work into sprints with defined roles (Product Owner, Scrum Master, Development Team) and ceremonies (standups, planning, retrospectives). This topic covers Scrum practices, avoiding common pitfalls, and adapting Scrum to organizational contexts.
+description: 'Scrum is a popular Agile framework organizing work into sprints with
+  defined roles (Product Owner, Scrum Master, Development Team) and ceremonies (standups,
+  planning, retrospectives). This topic covers Scrum practices, avoiding common pitfalls,
+  and adapting Scrum to organizational contexts.
+
+  '
 learning_resources:
-  - type: external_link
-    title: "Scrum Guide"
-    url: "https://scrumguides.org/"
-    description: "Official Scrum framework guide and rules."
-  - type: book
-    title: "Succeeding with Agile"
-    url: "https://www.oreilly.com/library/view/succeeding-with-agile/9780321579362/"
-    description: "Practical Scrum implementation guidance."
-    author: "Mike Cohn"
-  - type: book
-    title: "The Agile Way"
-    url: "https://www.oreilly.com/library/view/the-agile-way/9781491944364/"
-    description: "Agile and Scrum practical applications."
-    author: "Liem Nguyen"
+- type: external_link
+  title: Scrum Guide
+  url: https://scrumguides.org/
+  description: Official Scrum framework guide and rules.
 cross_references:
-  - agile-basics
-  - facilitating-agile
+- agile-basics
+- facilitating-agile
 ---
 
 # Scrum

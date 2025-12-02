@@ -1,26 +1,21 @@
 ---
 title: General API Design and Security Principles
-description: >
-  APIs are contracts between systems. Good API design includes consistent naming, clear semantics, versioning strategy, and discoverability. Security includes authentication, authorization, rate limiting, and preventing common vulnerabilities. This topic covers HTTP APIs, REST principles, GraphQL considerations, and practical security measures.
+description: 'APIs are contracts between systems. Good API design includes consistent
+  naming, clear semantics, versioning strategy, and discoverability. Security includes
+  authentication, authorization, rate limiting, and preventing common vulnerabilities.
+  This topic covers HTTP APIs, REST principles, GraphQL considerations, and practical
+  security measures.
+
+  '
 learning_resources:
-  - type: book
-    title: "RESTful API Design"
-    url: "https://www.oreilly.com/library/view/restful-web-api/9781449359928/"
-    description: "Principles of RESTful API design."
-    author: "Leonard Richardson"
-  - type: external_link
-    title: "OWASP API Security"
-    url: "https://owasp.org/www-project-api-security/"
-    description: "Top API security risks and mitigations."
-  - type: book
-    title: "API Security in Action"
-    url: "https://www.oreilly.com/library/view/api-security-in/9781617296673/"
-    description: "Comprehensive API security practices."
-    author: "Neil Madden"
+- type: external_link
+  title: OWASP API Security
+  url: https://owasp.org/www-project-api-security/
+  description: Top API security risks and mitigations.
 cross_references:
-  - rest-design
-  - secure-coding-practices
-  - shifting-left-security
+- rest-design
+- secure-coding-practices
+- shifting-left-security
 ---
 
 # General API Design and Security Principles

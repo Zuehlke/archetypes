@@ -1,25 +1,25 @@
 ---
 title: Debugging
-description: >
-  Debugging is the systematic process of finding and fixing defects. Beyond print statements and breakpoints, effective debugging includes understanding program flow, state analysis, hypothesis formation, and using debugging tools well. This topic covers debugging strategies, reading stack traces, memory issues, and preventing bugs through design.
+description: 'Debugging is the systematic process of finding and fixing defects. Beyond
+  print statements and breakpoints, effective debugging includes understanding program
+  flow, state analysis, hypothesis formation, and using debugging tools well. This
+  topic covers debugging strategies, reading stack traces, memory issues, and preventing
+  bugs through design.
+
+  '
 learning_resources:
-  - type: book
-    title: "Debugging Teams"
-    url: "https://www.oreilly.com/library/view/debugging-teams/9781491932049/"
-    description: "Systematic debugging and problem-solving approaches."
-    author: "Brian Fitzpatrick"
-  - type: external_link
-    title: "GDB Tutorial"
-    url: "https://www.sourceware.org/gdb/documentation/"
-    description: "GNU Debugger documentation and usage."
-  - type: book
-    title: "The Pragmatic Programmer"
-    url: "https://www.oreilly.com/library/view/the-pragmatic-programmer/9780135957059/"
-    description: "Includes practical debugging techniques."
-    author: "David Thomas"
+- type: book
+  title: Debugging Teams
+  url: https://www.oreilly.com/library/view/debugging-teams/9781491932049/
+  description: Systematic debugging and problem-solving approaches.
+  author: Brian Fitzpatrick
+- type: external_link
+  title: GDB Tutorial
+  url: https://www.sourceware.org/gdb/documentation/
+  description: GNU Debugger documentation and usage.
 cross_references:
-  - primary-programming-language
-  - root-cause-analysis
+- primary-programming-language
+- root-cause-analysis
 ---
 
 # Debugging

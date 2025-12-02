@@ -8,4 +8,4 @@ cross_references: []
 
 Understanding and using tools for effective team collaboration.
 
-- 
+-

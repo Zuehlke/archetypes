@@ -1,24 +1,23 @@
 ---
 title: Styleguides and Linting
-description: >
-  Consistent code style improves readability and reduces review friction. Linters catch style violations automatically. This topic covers establishing styleguides, configuring linters, and balancing consistency with flexibility. Style is not subjective—agreed standards enable focus on meaningful discussions.
+description: 'Consistent code style improves readability and reduces review friction.
+  Linters catch style violations automatically. This topic covers establishing styleguides,
+  configuring linters, and balancing consistency with flexibility. Style is not subjective—agreed
+  standards enable focus on meaningful discussions.
+
+  '
 learning_resources:
-  - type: external_link
-    title: "Google Style Guides"
-    url: "https://google.github.io/styleguide/"
-    description: "Language-specific coding standards."
-  - type: external_link
-    title: "EditorConfig"
-    url: "https://editorconfig.org/"
-    description: "Maintain consistent coding styles across environments."
-  - type: book
-    title: "Code Complete"
-    url: "https://www.oreilly.com/library/view/code-complete-2nd/9780735619678/"
-    description: "Chapter on formatting and style standards."
-    author: "Steve McConnell"
+- type: external_link
+  title: Google Style Guides
+  url: https://google.github.io/styleguide/
+  description: Language-specific coding standards.
+- type: external_link
+  title: EditorConfig
+  url: https://editorconfig.org/
+  description: Maintain consistent coding styles across environments.
 cross_references:
-  - clean-code-and-refactoring
-  - continuous-integration
+- clean-code-and-refactoring
+- continuous-integration
 ---
 
 # Styleguides and Linting

@@ -8,4 +8,4 @@ cross_references: []
 
 An overview of the software development lifecycle stages.
 
-- 
+-

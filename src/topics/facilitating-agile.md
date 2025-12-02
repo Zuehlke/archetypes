@@ -1,26 +1,26 @@
 ---
 title: Facilitating Agile
-description: >
-  Facilitating Agile means creating environments where teams can work effectively in iterative, adaptive ways. This includes running ceremonies (standups, retrospectives, planning), removing blockers, coaching teams through Agile adoption, and balancing autonomy with alignment. Facilitators don't have all answers but help teams learn.
+description: 'Facilitating Agile means creating environments where teams can work
+  effectively in iterative, adaptive ways. This includes running ceremonies (standups,
+  retrospectives, planning), removing blockers, coaching teams through Agile adoption,
+  and balancing autonomy with alignment. Facilitators don''t have all answers but
+  help teams learn.
+
+  '
 learning_resources:
-  - type: book
-    title: "Agile Retrospectives"
-    url: "https://www.oreilly.com/library/view/agile-retrospectives-making/9781492038061/"
-    description: "Running effective retrospectives and team learning."
-    author: "Esther Derby"
-  - type: book
-    title: "The Five Dysfunctions of a Team"
-    url: "https://www.oreilly.com/library/view/the-five-dysfunctions/9781492665076/"
-    description: "Understanding team dynamics and building trust."
-    author: "Patrick Lencioni"
-  - type: external_link
-    title: "Scrum Guide"
-    url: "https://scrumguides.org/"
-    description: "Official Scrum framework guide."
+- type: book
+  title: The Five Dysfunctions of a Team
+  url: https://www.oreilly.com/library/view/the-five-dysfunctions/9781492665076/
+  description: Understanding team dynamics and building trust.
+  author: Patrick Lencioni
+- type: external_link
+  title: Scrum Guide
+  url: https://scrumguides.org/
+  description: Official Scrum framework guide.
 cross_references:
-  - scrum
-  - agile-basics
-  - effective-collaboration
+- scrum
+- agile-basics
+- effective-collaboration
 ---
 
 # Facilitating Agile

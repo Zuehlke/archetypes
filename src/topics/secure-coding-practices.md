@@ -1,26 +1,25 @@
 ---
 title: Secure Coding Practices
-description: >
-  Secure coding means writing software resistant to attacks. This topic covers common vulnerabilities (injection, XSS, CSRF), input validation, authentication, authorization, cryptography basics, and secure development practices. Security must be designed in, not added after.
+description: 'Secure coding means writing software resistant to attacks. This topic
+  covers common vulnerabilities (injection, XSS, CSRF), input validation, authentication,
+  authorization, cryptography basics, and secure development practices. Security must
+  be designed in, not added after.
+
+  '
 learning_resources:
-  - type: external_link
-    title: "OWASP Top 10"
-    url: "https://owasp.org/www-project-top-ten/"
-    description: "Most critical web application security risks."
-  - type: book
-    title: "The Web Application Hacker's Handbook"
-    url: "https://www.oreilly.com/library/view/the-web-application/9781118026472/"
-    description: "Web application security testing and vulnerabilities."
-    author: "Stuttard and Pinto"
-  - type: book
-    title: "Cryptography Engineering"
-    url: "https://www.oreilly.com/library/view/cryptography-engineering/9781491904849/"
-    description: "Applied cryptography for developers."
-    author: "Schneier et al"
+- type: external_link
+  title: OWASP Top 10
+  url: https://owasp.org/www-project-top-ten/
+  description: Most critical web application security risks.
+- type: book
+  title: The Web Application Hacker's Handbook
+  url: https://www.oreilly.com/library/view/the-web-application/9781118026472/
+  description: Web application security testing and vulnerabilities.
+  author: Stuttard and Pinto
 cross_references:
-  - general-api-design-and-security-principles
-  - shifting-left-security
-  - internet-protocols
+- general-api-design-and-security-principles
+- shifting-left-security
+- internet-protocols
 ---
 
 # Secure Coding Practices

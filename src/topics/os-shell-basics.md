@@ -1,25 +1,19 @@
 ---
 title: OS/Shell Basics
-description: >
-  The operating system shell (bash, zsh, PowerShell) is where developers spend significant time. Understanding command-line basics: files, directories, permissions, processes, pipes, and scripting enables efficient workflows. Shell knowledge transcends specific tools and accelerates development.
+description: 'The operating system shell (bash, zsh, PowerShell) is where developers
+  spend significant time. Understanding command-line basics: files, directories, permissions,
+  processes, pipes, and scripting enables efficient workflows. Shell knowledge transcends
+  specific tools and accelerates development.
+
+  '
 learning_resources:
-  - type: book
-    title: "Linux Command Line"
-    url: "https://linuxcommand.org/lc3_lco.php"
-    description: "Comprehensive guide to command-line basics."
-    author: "William Shotts"
-  - type: external_link
-    title: "Bash Guide"
-    url: "https://mywiki.wooledge.org/BashGuide"
-    description: "Practical bash scripting guide."
-  - type: book
-    title: "Unix and Linux System Administration Handbook"
-    url: "https://www.oreilly.com/library/view/unix-and-linux/9780134278550/"
-    description: "System administration fundamentals."
-    author: "Evi Nemeth"
+- type: external_link
+  title: Bash Guide
+  url: https://mywiki.wooledge.org/BashGuide
+  description: Practical bash scripting guide.
 cross_references:
-  - developer-tooling-basics
-  - continuous-integration
+- developer-tooling-basics
+- continuous-integration
 ---
 
 # OS/Shell Basics

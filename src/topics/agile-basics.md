@@ -8,4 +8,4 @@ cross_references: []
 
 Introduction to Agile methodologies and principles.
 
-- 
+-

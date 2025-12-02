@@ -1,25 +1,19 @@
 ---
 title: Internet Protocols
-description: >
-  Internet protocols are the standards enabling communication across networks. This topic covers TCP/IP, DNS, HTTP, TLS/SSL, and how applications communicate over networks. Understanding protocols helps debug network issues, design resilient systems, and understand security implications.
+description: 'Internet protocols are the standards enabling communication across networks.
+  This topic covers TCP/IP, DNS, HTTP, TLS/SSL, and how applications communicate over
+  networks. Understanding protocols helps debug network issues, design resilient systems,
+  and understand security implications.
+
+  '
 learning_resources:
-  - type: book
-    title: "Computer Networking"
-    url: "https://www.oreilly.com/library/view/computer-networking-a/9780134997339/"
-    description: "Comprehensive networking fundamentals."
-    author: "Kurose and Ross"
-  - type: external_link
-    title: "How HTTPS Works"
-    url: "https://howhttps.works/"
-    description: "Visual explanation of HTTPS and encryption."
-  - type: book
-    title: "Web Security, Privacy, and Commerce"
-    url: "https://www.oreilly.com/library/view/web-security-privacy/9781449325236/"
-    description: "Internet protocols and web security."
-    author: "Simson Garfinkel"
+- type: external_link
+  title: How HTTPS Works
+  url: https://howhttps.works/
+  description: Visual explanation of HTTPS and encryption.
 cross_references:
-  - general-api-design-and-security-principles
-  - secure-coding-practices
+- general-api-design-and-security-principles
+- secure-coding-practices
 ---
 
 # Internet Protocols

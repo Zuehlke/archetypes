@@ -1,25 +1,18 @@
 ---
 title: Technical Documentation Writing
-description: >
-  Good technical documentation helps people understand and use systems. This topic covers clarity, structure, examples, and maintaining documentation. Poor documentation wastes time; great documentation multiplies team productivity.
+description: 'Good technical documentation helps people understand and use systems.
+  This topic covers clarity, structure, examples, and maintaining documentation. Poor
+  documentation wastes time; great documentation multiplies team productivity.
+
+  '
 learning_resources:
-  - type: book
-    title: "Docs Like Code"
-    url: "https://www.oreilly.com/library/view/docs-like-code/9781491956365/"
-    description: "Treating documentation as software with version control."
-    author: "Anne Gentle"
-  - type: external_link
-    title: "Google Technical Writing"
-    url: "https://developers.google.com/tech-writing"
-    description: "Free technical writing course from Google."
-  - type: book
-    title: "The Illustrated Software"
-    url: "https://www.oreilly.com/library/view/the-illustrated-software/9781491922522/"
-    description: "Visual communication for technical concepts."
-    author: "Paul Simon"
+- type: external_link
+  title: Google Technical Writing
+  url: https://developers.google.com/tech-writing
+  description: Free technical writing course from Google.
 cross_references:
-  - communication-and-presentation-skills
-  - clean-code-and-refactoring
+- communication-and-presentation-skills
+- clean-code-and-refactoring
 ---
 
 # Technical Documentation Writing

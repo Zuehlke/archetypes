@@ -1,26 +1,25 @@
 ---
 title: Legacy Systems
-description: >
-  Legacy systems are older software that's difficult to maintain or extend but critical to business. This topic covers understanding legacy code, testing without a test suite, making safe changes, and gradual refactoring strategies. Legacy systems often represent significant business value and institutional knowledge.
+description: 'Legacy systems are older software that''s difficult to maintain or extend
+  but critical to business. This topic covers understanding legacy code, testing without
+  a test suite, making safe changes, and gradual refactoring strategies. Legacy systems
+  often represent significant business value and institutional knowledge.
+
+  '
 learning_resources:
-  - type: book
-    title: "Working Effectively with Legacy Code"
-    url: "https://www.oreilly.com/library/view/working-effectively-with/9780131177055/"
-    description: "Practical techniques for improving legacy systems."
-    author: "Michael Feathers"
-  - type: external_link
-    title: "Strangler Fig Pattern"
-    url: "https://martinfowler.com/bliki/StranglerFigApplication.html"
-    description: "Gradual migration from legacy systems."
-  - type: book
-    title: "Refactoring to Patterns"
-    url: "https://www.oreilly.com/library/view/refactoring-to-patterns/0321213351/"
-    description: "Improving legacy code through refactoring."
-    author: "Joshua Kerievsky"
+- type: external_link
+  title: Strangler Fig Pattern
+  url: https://martinfowler.com/bliki/StranglerFigApplication.html
+  description: Gradual migration from legacy systems.
+- type: book
+  title: Refactoring to Patterns
+  url: https://www.oreilly.com/library/view/refactoring-to-patterns/0321213351/
+  description: Improving legacy code through refactoring.
+  author: Joshua Kerievsky
 cross_references:
-  - clean-code-and-refactoring
-  - root-cause-analysis
-  - technical-documentation-writing
+- clean-code-and-refactoring
+- root-cause-analysis
+- technical-documentation-writing
 ---
 
 # Legacy Systems

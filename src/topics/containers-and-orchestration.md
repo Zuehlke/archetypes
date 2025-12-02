@@ -1,26 +1,31 @@
 ---
 title: Containers and Orchestration
-description: >
-  Containers (Docker, Podman) package applications with dependencies into portable units. Orchestration platforms (Kubernetes) manage deployment, scaling, networking, and lifecycle at scale. This topic covers container images, registries, orchestration strategies like rolling updates, and operational concerns around security and networking.
+description: 'Containers (Docker, Podman) package applications with dependencies into
+  portable units. Orchestration platforms (Kubernetes) manage deployment, scaling,
+  networking, and lifecycle at scale. This topic covers container images, registries,
+  orchestration strategies like rolling updates, and operational concerns around security
+  and networking.
+
+  '
 learning_resources:
-  - type: book
-    title: "Docker in Action"
-    url: "https://www.oreilly.com/library/view/docker-in-action-2nd/9781617294761/"
-    description: "Practical guide to containerization with Docker."
-    author: "Jeff Nickoloff"
-  - type: external_link
-    title: "Kubernetes Official Documentation"
-    url: "https://kubernetes.io/docs/"
-    description: "Authoritative guide to Kubernetes."
-  - type: book
-    title: "Kubernetes in Action"
-    url: "https://www.oreilly.com/library/view/kubernetes-in-action/9781617293726/"
-    description: "Comprehensive guide to Kubernetes fundamentals."
-    author: "Marko Luksa"
+- type: book
+  title: Docker in Action
+  url: https://www.oreilly.com/library/view/docker-in-action-2nd/9781617294761/
+  description: Practical guide to containerization with Docker.
+  author: Jeff Nickoloff
+- type: external_link
+  title: Kubernetes Official Documentation
+  url: https://kubernetes.io/docs/
+  description: Authoritative guide to Kubernetes.
+- type: book
+  title: Kubernetes in Action
+  url: https://www.oreilly.com/library/view/kubernetes-in-action/9781617293726/
+  description: Comprehensive guide to Kubernetes fundamentals.
+  author: Marko Luksa
 cross_references:
-  - cloud-computing
-  - devops-mindset
-  - continuous-delivery
+- cloud-computing
+- devops-mindset
+- continuous-delivery
 ---
 
 # Containers and Orchestration

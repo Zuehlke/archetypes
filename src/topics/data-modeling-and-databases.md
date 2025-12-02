@@ -1,26 +1,22 @@
 ---
 title: Data Modeling and Databases
-description: >
-  Data modeling is designing how data is structured and organized. Database understanding covers relational, NoSQL, and specialized databases. This topic includes schema design, normalization, indexing, query optimization, transactions, and choosing the right database for use cases. Good data design prevents performance problems and enables future scaling.
+description: 'Data modeling is designing how data is structured and organized. Database
+  understanding covers relational, NoSQL, and specialized databases. This topic includes
+  schema design, normalization, indexing, query optimization, transactions, and choosing
+  the right database for use cases. Good data design prevents performance problems
+  and enables future scaling.
+
+  '
 learning_resources:
-  - type: book
-    title: "Designing Data-Intensive Applications"
-    url: "https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491902141/"
-    description: "Comprehensive data design and systems guide."
-    author: "Martin Kleppmann"
-  - type: book
-    title: "Database Internals"
-    url: "https://www.oreilly.com/library/view/database-internals/9781492040330/"
-    description: "Understanding how databases work internally."
-    author: "Alex Petrov"
-  - type: external_link
-    title: "SQL Tutorial"
-    url: "https://sql-tutorial.readthedocs.io/"
-    description: "Practical SQL fundamentals and best practices."
+- type: book
+  title: Database Internals
+  url: https://www.oreilly.com/library/view/database-internals/9781492040330/
+  description: Understanding how databases work internally.
+  author: Alex Petrov
 cross_references:
-  - relational-databases
-  - nosql-databases
-  - performance-and-scalability
+- relational-databases
+- nosql-databases
+- performance-and-scalability
 ---
 
 # Data Modeling and Databases

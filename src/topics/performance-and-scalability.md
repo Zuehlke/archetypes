@@ -1,26 +1,20 @@
 ---
 title: Performance and Scalability
-description: >
-  Performance is how fast systems respond. Scalability is maintaining performance as load grows. This topic covers profiling, benchmarking, caching, algorithmic optimization, and recognizing when infrastructure changes beat code optimization. Premature optimization is wasted effort; measure first.
+description: 'Performance is how fast systems respond. Scalability is maintaining
+  performance as load grows. This topic covers profiling, benchmarking, caching, algorithmic
+  optimization, and recognizing when infrastructure changes beat code optimization.
+  Premature optimization is wasted effort; measure first.
+
+  '
 learning_resources:
-  - type: book
-    title: "Designing for Performance"
-    url: "https://www.oreilly.com/library/view/designing-for-performance/9781491902141/"
-    description: "Holistic performance optimization approaches."
-    author: "Lara Hogan"
-  - type: external_link
-    title: "Performance Monitoring"
-    url: "https://developer.mozilla.org/en-US/docs/Web/Performance"
-    description: "Web performance best practices."
-  - type: book
-    title: "Systems Performance"
-    url: "https://www.oreilly.com/library/view/systems-performance/9780136820147/"
-    description: "Advanced performance analysis and tuning."
-    author: "Brendan Gregg"
+- type: external_link
+  title: Performance Monitoring
+  url: https://developer.mozilla.org/en-US/docs/Web/Performance
+  description: Web performance best practices.
 cross_references:
-  - profiling-and-performance-tuning
-  - building-for-scale
-  - data-structures
+- profiling-and-performance-tuning
+- building-for-scale
+- data-structures
 ---
 
 # Performance and Scalability

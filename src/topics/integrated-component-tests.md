@@ -1,25 +1,20 @@
 ---
 title: Integrated Component Tests
-description: >
-  Integration tests verify that multiple components work together correctly, testing the interactions between units while still being faster than end-to-end tests. This topic covers test isolation, mocking strategies, database testing, and finding the right balance between unit and E2E tests for efficient feedback.
+description: 'Integration tests verify that multiple components work together correctly,
+  testing the interactions between units while still being faster than end-to-end
+  tests. This topic covers test isolation, mocking strategies, database testing, and
+  finding the right balance between unit and E2E tests for efficient feedback.
+
+  '
 learning_resources:
-  - type: external_link
-    title: "Testing Strategies"
-    url: "https://martinfowler.com/articles/testing-strategies.html"
-    description: "Comparing different testing approaches and trade-offs."
-  - type: book
-    title: "The Art of Software Testing"
-    url: "https://www.oreilly.com/library/view/the-art-of/9781119202974/"
-    description: "Comprehensive testing approaches and strategies."
-    author: "Glenford Myers"
-  - type: external_link
-    title: "Test Pyramid"
-    url: "https://martinfowler.com/bliki/TestPyramid.html"
-    description: "Balancing different test levels."
+- type: external_link
+  title: Test Pyramid
+  url: https://martinfowler.com/bliki/TestPyramid.html
+  description: Balancing different test levels.
 cross_references:
-  - the-test-pyramid
-  - automated-end-to-end-system-testing
-  - test-driven-development
+- the-test-pyramid
+- automated-end-to-end-system-testing
+- test-driven-development
 ---
 
 # Integrated Component Tests
