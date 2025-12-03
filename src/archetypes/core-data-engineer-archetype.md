@@ -1,57 +1,55 @@
+---
+title: Core Data Engineer Archetype
+description: >
+    The Core Data Engineer represents represents the foundation of data excellence, enabling organizations to leverage the power of data through robust, scalable, and efficient systems. This archetype embodies the essential competencies required to design, build, and maintain data pipelines, storage solutions, data modelling and processing frameworks.
+
+    Data Engineers focus on solving real-world problems through data, ensuring reliability, performance, and security while collaborating with data scientists, analysts, and software engineers. Mastery in this role requires not only technical expertise but also a mindset of continuous improvement, automation, and value-driven delivery.
+
+    This archetype serves as a roadmap for professionals shaping their careers in data engineering, from foundational skills to advanced mastery.
+skill_stages:
+  - name: "Novice"
+    topics:
+      - sql-basics
+      - data-pipeline-basics
+      - data-structures
+      - relational-databases
+  - name: "Advanced Beginner"
+    topics: 
+      - advanced-sql 
+      - advanced-data-pipeline
+      - nosql-databases
+      - cloud-native-data-platform
+      - workflow-orchestration
+      - monitoring-and-observability
+      - agile-basics
+      - version-control-systems
+      - continuous-integration
+  - name: "Competent"
+    topics:
+      - dataops-mindset
+      - data-modeling-and-databases
+      - data-quality-and-validation
+      - distributed-systems-theory-and-practices
+      - data-streaming-platforms
+      - metadata-management
+      - continuous-delivery
+  - name: "Proficient"
+    topics:
+      - ml-engineering-integration
+      - data-security-compliance
+      - performance-and-scalability
+      - cloud-computing
+      - data-governance
+      - mentoring-and-coaching
+      - effective-collaboration
+  - name: "Expert"
+    topics:
+      - profiling-and-performance-tuning
+      - data-platform-economic-impact-analysis
+---
+
 # Core Data Engineer Archetype
 
-The Core Data Engineer represents represents the foundation of data excellence, enabling organizations to leverage the power of data through robust, scalable, and efficient systems. This archetype embodies the essential competencies required to design, build, and maintain data pipelines, storage solutions, data modelling and processing frameworks.
+{{ render_description() }}
 
-Data Engineers focus on solving real-world problems through data, ensuring reliability, performance, and security while collaborating with data scientists, analysts, and software engineers. Mastery in this role requires not only technical expertise but also a mindset of continuous improvement, automation, and value-driven delivery.
-
-This archetype serves as a roadmap for professionals shaping their careers in data engineering, from foundational skills to advanced mastery.
-
-
-## Novice
-* SQL Basic (simple queries)
-* Data Pipeline Basic (Python, PySpark)
-* RDBMS Basic (Database, Schema, Tables, Views)
-* Data Storage Basic (Stroage Options, File Types)
-
-
-## Advanced Beginner
-
-* SQL Mastery (complex queries, optimization)
-* Data Pipeline Programming (Python, PySpark, or Scala for ETL)
-* Batch Processing (Pandas, Spark, cloud ETL tools)
-* Database/ Data Storage Options (RDBMS, NoSQL, cloud warehouses)
-* Basic Orchestration (Airflow, Luigi)
-* Data Quality & Monitoring (validation, alerting)
-* Version Control Systems & CI/CD (Git, Jenkins/GitHub Actions)
-
-
-## Competent
-
-* Advanced SQL (window functions, query tuning)
-* DataOps concepts (simple alerts)
-* Data modelling patterns (Normalize Forms, OLTP, OLAP)
-* Distributed Systems (Spark, partitioning, parallelism)
-* Data Streaming (Kafka, Flink, Spark Streaming)
-* Cloud-Native Data Platform Architectures (AWS Glue, GCP Dataflow, Azure Data Factory)
-* Infrastructure as Code (Terraform, CloudFormation)
-* Data Governance (metadata, access controls)
-
-## Proficient
-
-* Scalable Architectures (Lambda/Kappa, data mesh)
-* DataOps practices (test automation, operational runbooks)
-* Data modelling (Star, dimenaional modelling)
-* ML Engineering Collaboration (feature stores, model serving)
-* Security & Compliance (GDPR, HIPAA, anonymization)
-* Performance Tuning (data pipeline, query)
-* Cost Optimization (resource management, cloud efficiency)
-* Data Governance (data contracts, data lineage)
-
-## Expert
-
-* Multi-Cloud/Hybrid Architectures
-* High-Performance Data Systems (petabyte-scale optimization)
-* Economic Impact Analysis (ROI of data investments)
-* Industry Thought Leadership (conferences, open-source contributions)
-* Executive Communication (translating tech to business value)
-
+{{ render_skill_stages() }}
