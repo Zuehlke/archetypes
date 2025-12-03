@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/Zuehlke/archetypes/schemas/topic.schema.json",
+  "title": "Topic Frontmatter Schema", 
+  "description": "JSON Schema for validating topic YAML frontmatter",
+  "type": "object",
+  
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Display name of the topic"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Detailed explanation of the concept"
+    },
+    "learning_resources": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/definitions/learning_resource"
+      },
+      "description": "Array of learning materials for this topic"
+    },
+    "cross_references": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/definitions/topic_slug"
+      },
+      "uniqueItems": true,
+      "description": "Links to related topics"
+    }
+  },
+  
+  "required": ["title"],
+  "additionalProperties": true,
+  
+  "examples": [
+    {
+      "title": "Version Control Systems",
+      "description": "Understanding distributed version control and collaborative development workflows.",
+      "learning_resources": [
+        {
+          "type": "external_link",
+          "title": "Learn Git Branching",
+          "url": "https://learngitbranching.js.org/",
+          "description": "Interactive tutorial for learning Git branching"
+        },
+        {
+          "type": "book",
+          "title": "Pro Git",
+          "author": "Scott Chacon",
+          "url": "https://git-scm.com/book",
+          "publisher": "Apress",
+          "year": 2014,
+          "description": "Comprehensive guide to Git version control"
+        },
+        {
+          "type": "course",
+          "title": "Git Fundamentals",
+          "url": "https://internal.training/git",
+          "is_internal": true,
+          "description": "Internal training course on Git basics"
+        }
+      ],
+      "cross_references": [
+        "pair-programming",
+        "extreme-programming-practices"
+      ]
+    }
+  ]
+}

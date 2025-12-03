@@ -9,3 +9,6 @@ install:
 
 fmt:
     uv run pymarkdown scan ./src
+
+add-frontmatter:
+    uv run python3 scripts/add_frontmatter_to_topics.py

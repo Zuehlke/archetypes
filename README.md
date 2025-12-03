@@ -53,9 +53,21 @@ The `pre-commit` hook will rebuild the static website before every commit.
 This project is maintained by:
 
 * **Patrick Burls** ([@pburls](https://github.com/pburls))
-* **Kevin Denver** ([@kdenver](https://github.com/kevin-denver))
+* **Fabio Scagliola** ([@fabioscagliola](https://github.com/fabioscagliola))
 
-Feel free to reach out to any maintainer if you have questions or need assistance.
+Feel free to reach out to any maintainer if you have questions or need assistance. You can also contact us via the [Archetypes > General](https://teams.microsoft.com/l/channel/19%3AKP35frVs7vgqGUh8X0iYTMPPWEzy5tqQ41Y6bcF_3oM1%40thread.tacv2/General?groupId=22083902-eb02-4c49-aeb5-04bdf19ddfd4&tenantId=ccce7f5e-a35f-4bc3-8e63-b2215e7d14f9) Teams channel using the @maintainers tag.
+
+## Contributors
+
+We'd like to thank the following individuals for their significant contributions:
+
+* **Kevin Denver** ([@kevin-denver](https://github.com/kevin-denver)) - Set up the initial project and scaffolded the Core Software Engineer archetype
+* **Milan Starcevic** ([@MilanStarcevicZuehlke](https://github.com/MilanStarcevicZuehlke)) - Created the FSI Software Engineer archetype and contributed extensive FSI-related topics (banking, insurance, financial crimes, regulations)
+* **Milos Bjelcevic** ([@milosbjelceviczuhlke](https://github.com/milosbjelceviczuhlke)) - Contributed to the project structure and design
+* **Fabio Scagliola** ([@fabioscagliola](https://github.com/fabioscagliola)) - Contributed to the project structure and design
+* **Patrick Burls** ([@pburls](https://github.com/pburls)) - Contributed to the project structure and design
+
+For a complete list of all contributors, see our [GitHub contributors page](https://github.com/Zuehlke/archetypes/graphs/contributors).
 
 ## License
 This work is licensed under a
