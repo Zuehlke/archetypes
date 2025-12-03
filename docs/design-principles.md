@@ -8,14 +8,12 @@ This document outlines the key design principles that guide architectural and im
 
 **Principle**: Choose simple, maintainable solutions over highly normalized data structures when the trade-offs favor simplicity.
 
-**Application**:
-
+**Application**: 
 - Learning resources are embedded within topics rather than normalized into separate entities
 - Accept some duplication when it provides better context and independence
 - Prioritize ease of editing and maintenance over database-style optimization
 
 **Rationale**:
-
 - Content creators (not database administrators) will be editing these files
 - Contextual information is often more valuable than avoiding duplication
 - Simpler structures reduce cognitive load and barriers to contribution
