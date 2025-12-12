@@ -1,6 +1,10 @@
 # Zuhlke Engineering Archetypes and Learning Pathways
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
+> **Note:** This project has been **archived** and migrated to Zühlke's internal GitLab instance. Please visit the new repository at: [https://codehub.zuehlke.com/learning-journey/archetypes](https://codehub.zuehlke.com/learning-journey/archetypes)
+>
+> The Zühlke Archetypes website is still available to be viewed publicly at: [https://learning-journey.pages.codehub.zuehlke.com/archetypes/](https://learning-journey.pages.codehub.zuehlke.com/archetypes/)
+
 ## Project Overview
 This project aims to help software engineers understand the skills and knowledge required at each stage of their career, from novice to expert. It serves as a roadmap for personal and professional development, enabling individuals to identify areas for growth and track their progress.
 This is done by using 'archetypes' that define competencies 'topics' expected at different competency stages, as well as 'learning resources' that guide individuals in acquiring these skills.
