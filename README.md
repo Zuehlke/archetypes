@@ -1,7 +1,7 @@
 # Zuhlke Engineering Archetypes and Learning Pathways
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
-> **Note:** This project has been **archived** and migrated to Zühlke's internal GitLab instance. Please visit the new repository at: [https://codehub.zuehlke.com/learning-journey/archetypes](https://codehub.zuehlke.com/learning-journey/archetypes)
+> ⚠️ **Note:** This project has been **archived** and migrated to Zühlke's internal GitLab instance. Please visit the new repository at: [https://codehub.zuehlke.com/learning-journey/archetypes](https://codehub.zuehlke.com/learning-journey/archetypes)
 >
 > The Zühlke Archetypes website is still available to be viewed publicly at: [https://learning-journey.pages.codehub.zuehlke.com/archetypes/](https://learning-journey.pages.codehub.zuehlke.com/archetypes/)
 
