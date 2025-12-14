@@ -1,9 +1,9 @@
 ---
 title: Version Control Systems
 learning_resources:
-  - type: "external_link"
-    title: "Learn Git Branching"
-    url: "https://learngitbranching.js.org/"
+- type: external_link
+  title: Learn Git Branching
+  url: https://learngitbranching.js.org/
 ---
 
 # Version Control Systems

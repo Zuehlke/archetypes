@@ -8,6 +8,4 @@ cross_references: []
 
 Fundamentals of HTML and CSS for building web interfaces.
 
-## Learning Materials
-
-- 
+-
