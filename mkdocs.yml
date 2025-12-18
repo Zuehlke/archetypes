@@ -8,6 +8,7 @@ site_dir: _site
 repo_url: https://github.com/Zuehlke/archetypes
 
 plugins:
+  - search
   - macros:
       module_name: archetype_macros
 
